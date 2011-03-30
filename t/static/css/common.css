@@ -1,0 +1,1476 @@
+/* =========================
+
+Author: Hatena
+Access:	info@hatena.ne.jp
+Comment: 基礎デザイン用CSS
+Filename: common.css
+Update: 2006/10/23
+Index:
+
+-COMMON
+-RAYOUT
+--BANNER
+--BREADCRUMBS
+--HEADLINE
+--BODY
+--FOOTER
+--(2COLUMN)
+-PAGER
+-BOX
+-LIST
+-TABLE
+-AD
+-OTHER
+
+========================= */
+
+@import "variation.css";
+
+/* =========== COMMON =========== */
+
+body{
+  margin:0;
+  padding:0;
+  color:#000;
+  background:#FFF;
+  text-align:center;
+}
+
+img{
+  border:0
+}
+
+label{
+  cursor:pointer;
+}
+
+h1,h2,h3,h4,h5{
+  margin:0;
+  padding:0;
+  font-size:100%;
+}
+
+/* =========== RAYOUT =========== */
+
+
+
+#globalheader{
+  text-align:left;
+}
+
+#globalheader table#headtable{
+  width:100%;
+  padding:3px;
+}
+
+#globalheader td#logo{
+  white-space:nowrap;
+  padding-left:2px;
+}
+
+#globalheader td#logo img{
+  margin-top:1px;
+  margin-left:2px;
+  vertical-align:middle;
+}
+
+#globalheader form.search-form{
+  display:inline;
+}
+
+#globalheader form.search-form input{
+  margin-top:3px;
+  vertical-align:middle;
+}
+
+#globalheader form#global-search input.search-text{
+  margin-left:10px;
+  width:160px;
+  border:1px solid #5279E7;
+  padding-left: 2px;
+  height: 1.5em;
+}
+
+#globalheader form#global-search input.search-submit{
+  background:#FFF;
+  border:1px solid #5279E7;
+}
+
+#headtable tr td#globalmenu {
+  font-size:90%;
+  white-space:nowrap;
+  padding-right:5px;
+}
+
+#globalheader td#globalmenu ul{
+  margin-top:1px;
+  float:right;
+  margin-left:0;
+  padding-left:0;
+  margin-bottom:0;
+}
+
+#globalheader td#globalmenu ul li{
+  display:inline;
+  font-size:85%;
+}
+
+#globalheader td#globalmenu ul li a{
+  margin-right:5px;
+  padding-left:15px;
+  background:url(/images/common/icon-arrow.gif) 0 50% no-repeat;
+  color:#003CAD;
+}
+
+#globalheader div#bannersub {
+  text-align:center;
+  clear:both;
+}
+
+#globalheader div#bannersub table{
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  border-spacing:0;
+  border-collapse:collapse;
+  width: 100%;
+  margin:auto;
+}
+
+#globalheader div#bannersub table td {
+  font-size: 80%;
+  padding:3px 1px;
+  background:#5279E7;
+  color:#FFF;
+  white-space:nowrap;
+}
+
+#globalheader div#bannersub table td a{
+  color:#FFF;
+}
+
+#globalheader div#bannersub table td.username{
+  width:50%;
+  text-align:left;
+  padding-left:8px;
+}
+
+#globalheader div#bannersub table td.username span.point{
+  color:#FFFFCC;
+}
+
+#globalheader div#bannersub table td.gmenu{
+  text-align:center;
+  padding:0px 0.5em;
+  width:1%;
+}
+
+#userheader{
+  background:#1841CE;
+  position:relative;
+  font-size:80%;
+  text-align:left;
+}
+
+#userheader img.logo{
+  position:absolute;
+  top:0;
+  right:0;
+ _right:20px;
+ *right:20px;
+}
+
+#userheader img,#userheader input{
+  vertical-align:bottom;
+}
+
+#userheader form{
+  display:inline;
+}
+
+#userheader input{
+  font-size:80%;
+  margin-bottom:4px;
+}
+
+#userheader div#bannersub {
+  text-align:center;
+  clear:both;
+  padding-bottom:1px;
+}
+
+#userheader div#bannersub table{
+  border-top: 1px solid #00289C;
+  border-spacing:0;
+  border-collapse:collapse;
+  width: 100%;
+  margin:0 auto;
+}
+
+#userheader div#bannersub table td {
+  font-size: 80%;
+  padding:1px;
+  background:#5279E7;
+  white-space:nowrap;
+  color:#CED7FF;
+}
+
+#userheader div#bannersub table td.gmenu{
+  padding:0 0.5em;
+  width:1%;
+  text-align:center;
+}
+
+#userheader div#bannersub table td a{
+  color:#CED7FF;
+  text-decoration:none;
+}
+
+#userheader div#bannersub table td.username{
+  width:50%;
+  text-align:left;
+  padding-left:8px;
+}
+
+#userheader div#bannersub table td.username span.point{
+  color:#FFFFCC;
+}
+
+
+.hatena-body{
+  text-align:left;
+  margin:0 auto;
+  width:90%;
+  /* min-width:735px; */
+}
+
+#breadcrumbs{
+  font-size:90%;
+  margin:18px auto 0 auto;
+}
+
+#breadcrumbs img{
+  vertical-align:middle;
+  margin:0 4px 2px 4px;
+}
+
+#body{
+  line-height:135%;
+  background:#FFF;
+}
+
+h1{
+  font-size:120%;
+  line-height:135%;
+  border-bottom:1px dotted #ADB2FF;
+  padding-bottom:5px;
+  margin:18px auto;
+}
+
+h1 a{
+  color:#000;
+  text-decoration:underline;
+}
+
+h1 form{
+  display:inline;
+}
+
+h1 form input{
+  vertical-align:middle;
+}
+
+h1 span {
+  font-size:80%;
+  font-weight:normal;
+}
+
+h1 span a{
+  color:#0000FF;
+}
+
+.h-plain{ color:#000;margin:1.5em 0 0.5em 0; }
+
+.h-bline {
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #5279E7;
+}
+
+.h-lline {
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #5279E7;
+}
+
+#footer{
+  width:100%;
+  clear:both;
+  color:#666;
+  font-size:80%;
+  text-align:center;
+  padding:20px 0;
+}
+
+/* =========== 2COLUMN =========== */
+
+#main{
+  text-align:left;
+  background:#FFF;
+  float:left;
+  margin-right:265px;
+  /* width:100%; */
+}
+
+#sidebar{
+  float:right;
+  margin-left:-250px;
+  width:250px;
+}
+
+/* =========== PAGER =========== */
+
+.pager{
+  clear:both;
+  font-size:90%;
+  line-height:150%;
+  margin:10px 0;
+}
+
+.pager-l{
+  clear:both;
+  float:left;
+  text-align:left;
+  font-size:90%;
+  line-height:150%;
+  margin:10px 0;
+}
+
+.pager-r{
+  float:right;
+  text-align:right;
+  font-size:90%;
+  line-height:150%;
+  margin:10px 0;
+}
+
+/* =========== BOX =========== */
+
+.box-curve-bar{ /* 帯付きの角丸 */
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#5279E7 url(../images/common/box-curve-bar-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar h2 a{
+  color:#FFFFFF;
+}
+
+.box-curve-bar h2 img,.box-curve-bar h2 input{
+  vertical-align:middle;
+}
+
+.box-curve-bar h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar .curve-middle{
+ _height:1%;
+  border-right:1px solid #5279E7;
+  border-left:1px solid #5279E7;
+  padding:10px 10px 3px 10px;
+}
+
+.curve-middle:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.curve-middle ul , .curve-middle ol{
+  margin:10px 30px;
+  padding:0;
+}
+
+.box-curve-bar span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:9px;
+  background:url(../images/common/box-curve-bar-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-bar span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:9px;
+  background:url(../images/common/box-curve-bar-bottom-left2.gif) bottom left no-repeat;
+}
+
+/* グレーラインの特殊パターン */
+.box-curve-bar-gline{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-gline h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#5279E7 url(../images/common/box-curve-bar-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-gline h2 a{
+  color:#FFFFFF;
+}
+
+.box-curve-bar-gline h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-top-right.gif) top right no-repeat;
+  padding:5px 8px;
+}
+
+.box-curve-bar-gline .curve-middle{
+ _height:1%;
+  border-right:1px solid #CCCCCC;
+  border-left:1px solid #CCCCCC;
+  padding:10px 10px 3px 10px;
+}
+.box-curve-bar-gline span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:9px;
+  background:url(../images/common/box-curve-bar-gline-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-bar-gline span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:9px;
+  background:url(../images/common/box-curve-bar-gline-bottom-left.gif) bottom left no-repeat;
+}
+
+
+/* 帯の右側にナビゲーションを表示 */
+
+.box-curve-bar h2 span.title .nav{
+  position:absolute;
+  top:5px;
+  right:8px;
+  font-weight:normal;
+  font-size:80%;
+  color:#FFF;
+}
+
+.box-curve-bar h2 span.title .nav img{
+  vertical-align:middle;
+  margin-bottom:2px;
+}
+
+/* 帯の右側にタブを表示 */
+
+.box-curve-bar h2 span.tab{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  font-size:80%;
+  font-weight:normal;
+  text-align:right;
+  padding:0;
+}
+
+.box-curve-bar h2 span.label{
+  display:block;
+  float:left;
+  width:4em; /* 適宜変更 */
+  text-align:left;
+  color:#E0E9FA;
+  padding:5px 0;
+}
+
+.box-curve-bar h2 span.tab a{
+  display:block;
+  float:left;
+  width:4.5em; /* 適宜変更 */
+  text-align:center;
+  padding:5px 0;
+}
+
+.box-curve-bar h2 span.tab a.select{
+  text-decoration:none;
+  color:#000;
+  font-weight:bold;
+  background:url(../images/common/box-curve-bar-tab.gif) top center no-repeat; /* 適宜画像の幅変更 */
+}
+
+ /* 枠線の角丸 */
+
+.box-curve-line{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line span.curve-top{
+  display:block;
+  width:100%;
+  height:9px;
+  font-size:1px;
+  background:url(../images/common/box-curve-line-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line span.curve-top span{
+  display:block;
+  width:100%;
+  height:9px;
+  font-size:1px;
+  background:url(../images/common/box-curve-line-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:9px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:9px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-bottom-left2.gif) bottom left no-repeat;
+}
+
+.box-curve-line .curve-middle{
+  line-height:135%;
+  border-left:1px solid #5279E7;
+  border-right:1px solid #5279E7;
+  margin:0;
+  padding:5px 10px;
+  display:inline-block;
+}
+
+ /* 枠線（グレー）の角丸 */
+
+.box-curve-gline{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-gline:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-gline span.curve-top{
+  display:block;
+  width:100%;
+  height:9px;
+  font-size:1px;
+  background:url(../images/common/box-curve-gline-top-right.gif) top right no-repeat;
+}
+
+.box-curve-gline span.curve-top span{
+  display:block;
+  width:100%;
+  height:9px;
+  font-size:1px;
+  background:url(../images/common/box-curve-gline-top-left.gif) top left no-repeat;
+}
+
+.box-curve-gline span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:9px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-gline-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-gline span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:9px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-gline-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-gline .curve-middle{
+  line-height:135%;
+  border-left:1px solid #CCCCCC;
+  border-right:1px solid #CCCCCC;
+  margin:0;
+  padding:5px 10px;
+  display:inline-block;
+}
+
+/* 塗りの角丸 */
+
+.box-curve{ 
+  background:#DEE3FF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve span.curve-top{
+  display:block;
+  width:100%;
+  height:5px;
+  font-size:1px;
+  background:url(../images/common/box-curve-top-left.gif) top left no-repeat;
+}
+
+.box-curve span.curve-top span{
+  display:block;
+  width:100%;
+  height:5px;
+  font-size:1px;
+  background:url(../images/common/box-curve-top-right.gif) top right no-repeat;
+}
+
+.box-curve .curve-middle{
+  font-size:90%;
+  line-heihgt:135%;
+  margin:0;
+  padding:5px 10px;
+  display:inline-block;
+}
+
+.box-curve span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:5px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:5px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bottom-right.gif) bottom right no-repeat;
+}
+
+/* 「一覧」リンクのボックス */
+
+.box-listlink{ 
+  text-align:right;
+  position:relative;
+  margin:0;
+}
+
+.message{
+  clear:both;
+ _height:1%;
+  background:#EFF3FF;
+  border:1px solid #C6C3FF;
+  padding:0.7em;
+}
+
+.success{
+  clear:both;
+ _height:1%;
+  background:#E7EBFF url(../images/common/success.gif) 0.5em 0.6em no-repeat;
+  border:1px solid #C6C3FF;
+  padding:0.7em 0.7em 0.7em 38px;
+}
+
+.error{
+  clear:both;
+ _height:1%;
+  background:#FAE9E0 url(../images/common/error.gif) 0.5em 0.6em no-repeat;
+  border:1px solid #FFC3C6;
+  padding:0.7em 0.7em 0.7em 38px;
+}
+
+.message.after , .success:after , .error:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/* =========== LIST =========== */
+
+.info{
+  font-size:90%;
+  clear:both;
+}
+
+.info h2{
+  font-weight:normal;
+  margin-top:15px;
+  padding:3px;
+  position:relative;
+}
+
+.info h2 a{
+  color:#000000;
+}
+
+.info h2 .users{
+  font-size:90%;
+}
+
+.info .nav{
+  position:absolute;
+  top:2.5em;
+  right:0.5em;
+  font-size:90%;
+}
+
+.info h2 a.nav , .info h2 .nav a{
+  color:#0000FF;
+}
+
+.info h2 img{
+  vertical-align:middle;
+  margin:0 3px 2px 3px;
+}
+
+.info ul, .info ol ,.info dl{
+  border-top:1px solid #5279E7;
+  background:#EFF3FF;
+  margin:0;
+  padding:8px 5px;
+}
+
+.info ul li ul , .info ol li ol , .info ol li ul , .info ul li ol{
+  border-top:0;
+   margin:0;
+   padding:3px 3px 0 3px;
+}
+
+.info ul{
+  list-style:circle;
+}
+
+.info ul.list-plain{
+  list-style:none;
+}
+
+.info ul li{
+  line-height:135%;
+  margin:0 0 3px 20px;
+}
+
+.info ol li{
+  line-height:135%;
+  margin:0 0 3px 25px;
+}
+
+.info ul.list-plain li, info ol.list-plain li{
+  line-height:135%;
+  margin:0 0 3px 3;
+}
+
+.info ul.list-inline, info ol.list-plain{
+  padding:10px;
+}
+
+.info ul.list-inline li, info ol.list-plain li{
+  margin:0;
+}
+
+.info ul li img, info ol li img{
+  vertical-align:middle;
+  margin:0 4px 2px 4px;
+}
+
+.info ul li a.users , .info ul li a.domain , .info ul li a.tag{
+  font-size:90%;
+}
+
+.info ol li a.users , .info ol li a.domain , .info ol li a.tag{
+  font-size:90%;
+}
+
+.info ul li a.tag{
+  text-decoration:none;
+  color:#6365CE;
+  font-family: Arial, Sans-Serif;
+}
+
+.info dl.dl-inline dt{
+  width:10em;
+  color:#6B7994;
+  margin-left:5px;
+  position:relative; /* IEpeekabooバグ用のposition */
+}
+
+.info dl.dl-inline dd{
+  margin-left:10em;
+}
+
+.info .box-curve{
+  background:#FFFFFF;
+  margin:3px 5px 8px 0;
+}
+
+.info .box-curve span.curve-top{
+  display:block;
+  width:100%;
+  height:5px;
+  font-size:1px;
+  background:url(../images/common/info-box-curve-top-left.gif) top left no-repeat;
+}
+
+.info .box-curve span.curve-top span{
+  display:block;
+  width:100%;
+  height:5px;
+  font-size:1px;
+  background:url(../images/common/info-box-curve-top-right.gif) top right no-repeat;
+}
+
+.info .box-curve p{
+  margin:0;
+  padding:1px 6px;
+}
+
+.info .box-curve span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:5px;
+  font-size:1px;
+  background:url(../images/common/info-box-curve-bottom-left.gif) bottom left no-repeat;
+}
+
+.info .box-curve span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:5px;
+  font-size:1px;
+  background:url(../images/common/info-box-curve-bottom-right.gif) bottom right no-repeat;
+}
+
+ul.list-circle {
+  list-style-type:circle;
+  margin:0;
+  padding:0;
+}
+
+ul.list-circle li{
+  margin-bottom:0.2em;
+}
+
+ul.list-inlink , ol.list-inlink {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul.list-inlink li, ol.list-inlink li{
+  font-size:90%;
+  background:url(../images/common/icon-inlink.gif) 0 7px no-repeat;
+  margin:0 5px 0 0;
+  padding:0 0 0 15px;
+}
+
+ul.list-inlink-inline , ol.list-inlink-inline {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul.list-inlink-inline li, ol.list-inlink-inline li{
+  display:inline;
+  font-size:90%;
+  background:url(../images/common/icon-inlink.gif) 0 3px no-repeat;
+  margin:0 10px 0 0;
+  padding:0 0 0 15px;
+}
+
+ul.list-cloud{ /* tagcloudなどのcloudのリスト */
+
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul.list-cloud li{
+  display:inline;
+  font-family:"Arial","Helvetica",Sans-serif;
+  line-height:1.2;
+  margin-right:10px;
+}
+
+ul.list-cloud li a{
+  text-decoration:none;
+  white-space:nowrap;
+}
+
+ul.list-cloud li.cloud0{ font-size:100%; }
+ul.list-cloud li.cloud1{ font-size:120%; }
+ul.list-cloud li.cloud2{ font-size:140%; }
+ul.list-cloud li.cloud3{ font-size:160%; }
+ul.list-cloud li.cloud4{ font-size:180%; }
+ul.list-cloud li.cloud5{ font-size:200%; }
+ul.list-cloud li.cloud6{ font-size:220%; }
+ul.list-cloud li.cloud7{ font-size:240%; }
+ul.list-cloud li.cloud8{ font-size:260%; }
+ul.list-cloud li.cloud9{ font-size:280%; }
+ul.list-cloud li.cloud10{ font-size:300%; }
+
+ul.list-button{
+  border-left:1px solid #999;
+  list-style:none;
+  margin:0;
+  padding:0;
+  width:100%;
+}
+
+ul.list-button:after{
+  content:"";
+  display:block;
+  clear:both; 
+}
+
+ul.list-button li{
+  width:7.5em; /* 適宜変更 */
+  float:left;
+  text-align:center;
+  font-size:10px;
+  background:#EEE url(../images/common/list-button.gif) bottom right no-repeat;
+  border-top:1px solid #999;
+  border-right:1px solid #666;
+  border-bottom:1px solid #666;
+  padding:0;
+  cursor:pointer;
+}
+
+ul.list-button li.select{
+  font-weight:bold;
+  background:#EFF3FF url(../images/common/list-button-select.gif) top left no-repeat;
+}
+
+ul.list-button li a{
+  display:block;
+  white-space:nowrap;
+  color:#0000FF;
+  text-decoration:none;
+}
+
+ul.list-tab{
+  margin:0;
+  padding:0;
+  list-style:none;
+  width:100%;
+}
+
+ul.list-tab li{
+  margin-right:0.3em;
+  display:block;
+  float:left;
+  width:70px;/* 適宜変更 その場合背景画像も変更*/
+  text-align:center;
+  padding:2px 0;
+  font-size:12px;
+  background:url(../images/common/tab-off.gif) no-repeat;
+  color:#0000FF;
+}
+
+ul.list-tab li a{
+  text-decoration:none;
+  color:#0000FF;
+}
+
+ul.list-tab li.select{
+  font-weight:bold;
+  color:#FFF;
+  background:url(../images/common/tab-on.gif) no-repeat;
+}
+
+ul.list-tab2{
+  margin:0;
+  padding:0 0 0 10px;
+  list-style:none;
+  width:100%;
+  background:url(../images/common/box-curve-bar-de-middle.gif) left bottom repeat-x; 
+  height:26px;
+}
+
+ul.list-tab2 li{
+  margin-right:0.3em;
+  display:block;
+  float:left;
+  width:70px;
+  text-align:center;
+  padding:2px 0;
+  font-size:12px;
+  background:url(../images/common/tab2-off.gif) no-repeat;
+  color:#0000FF;
+  text-decoration:underline;
+  height:26px;
+}
+
+ul.list-tab li a{
+  color:#FFF;
+}
+
+ul.list-tab2 li.select{
+  font-weight:bold;
+  color:#000;
+  background:url(../images/common/tab2-on.gif) no-repeat;
+  text-decoration:none;
+}
+
+ul.list-configmenu{
+  margin:0;
+  padding:0;
+  width:166px;
+  list-style:none;
+  font-size:90%;
+}
+
+ul.list-configmenu li{
+  border-bottom:1px solid #FFF;
+  background:#8EA2FF;
+}
+
+ul.list-configmenu li.select{
+  border-bottom:1px solid #FFF;
+  background:#7489EE;
+}
+
+ul.list-configmenu li a{
+  display:block;
+  color:#FFF;
+  font-weight:bold;
+  padding:3px 5px 3px 27px;
+  text-decoration:none;
+}
+
+ul.list-configmenu li ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  background:#FFF;
+  border:1px solid #7489EE;
+}
+
+ul.list-configmenu li ul li{
+  border:0;
+  background:#FFF;
+  padding:3px 0 3px 5px;
+  font-weight:bold;
+}
+
+ul.list-configmenu li ul li.select{
+  background:#E0E9FA;
+}
+
+ul.list-configmenu li ul li a{
+  font-weight:normal;
+  color:#0000FF;
+  text-decoration:underline;
+  display:inline;
+  padding:0;
+}
+
+ul.list-configmenu li ul li.select a{
+  font-weight:bold;
+  color:#000;
+  text-decoration:none;
+}
+
+ul.list-configmenu li#list-top{
+  background:#8EA2FF url(../images/common/menu-top.gif) center top no-repeat;
+}
+
+ul.list-configmenu li#list-bottom{
+  background:#8EA2FF url(../images/common/menu-bottom.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu li#list-top-select{
+  background:#7489EE url(../images/common/menu-top.gif) center top no-repeat;
+}
+
+ul.list-configmenu li#list-bottom-select{
+  background:#7489EE url(../images/common/menu-bottom.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu li a.icon-edit{ background:url(../images/common/icon-diaryedit.gif) 7px 50% no-repeat}
+ul.list-configmenu li a.icon-archive{ background:url(../images/common/icon-archive.gif) 7px 50% no-repeat}
+ul.list-configmenu li a.icon-design{ background:url(../images/common/icon-design.gif) 5px 50% no-repeat}
+ul.list-configmenu li a.icon-config{ background:url(../images/common/icon-config.gif) 5px 50% no-repeat}
+ul.list-configmenu li a.icon-keyword{ background:url(../images/common/icon-keywordl.gif) 7px 50% no-repeat}
+ul.list-configmenu li a.icon-option{ background:url(../images/common/icon-option.gif) 7px 50% no-repeat}
+ul.list-configmenu li a.icon-port{ background:url(../images/common/icon-port.gif) 5px 50% no-repeat}
+
+
+/* ========= TABLE ========= */
+
+table.table-list{
+  width:100%;
+  margin:0 auto;
+  border-collapse:collapse;
+  clear:both;
+}
+
+table.table-list thead tr th{
+  white-space:nowrap;
+  font-size:90%;
+  line-height:150%;
+  color:#FFF;
+  background:#5279E7;
+  padding:3px 5px;
+}
+
+table.table-list thead tr th a{
+  color:#FFF;
+}
+
+table.table-list thead tr th span.sort{
+  font-size:70%;
+}
+
+table.table-list thead tr th a.sort{
+  text-decoration:none;
+  font-size:70%;
+  color:#A6C4F2;
+}
+
+table.table-list thead tr th.curve-left{
+  background:#5279E7 url(../images/common/box-curve-bar-top-left.gif) top left no-repeat;
+}
+
+table.table-list thead tr th.curve-right{
+  background:#5279E7 url(../images/common/box-curve-bar-top-right.gif) top right no-repeat;
+}
+
+table.table-list tbody tr td{
+  font-size:90%;
+  padding:5px;
+  background:#FFF;
+  line-height:135%;
+}
+
+table.table-list tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-middle.gif) top left repeat-y;
+}
+
+table.table-list tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-middle.gif) top right repeat-y;
+}
+
+table.table-list tbody tr.odd td{
+  font-size:90%;
+  padding:5px;
+  background:#F0F0FF;
+}
+
+table.table-list tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-middle.gif) top left repeat-y;
+}
+
+table.table-list tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-middle.gif) top right repeat-y;
+}
+
+table.table-list tfoot tr td{
+  background:url(../images/common/box-curve-bar-middle.gif) bottom right repeat-x;
+}
+
+table.table-list tfoot tr td.curve-left{
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list tfoot tr td.curve-right{
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-bottom-right.gif) bottom right no-repeat;
+}
+
+table.table-config{
+  width:100%;
+  clear:both;
+  border:1px solid #CCC;
+}
+
+table.table-config tr th{
+  width:20%;
+  font-size:90%;
+  line-height:150%;
+  background:#EFF3FF;
+  border-bottom:0;
+  padding:3px;
+  text-align:center;
+}
+
+table.table-config tr th a{
+  color:#000000;
+}
+
+table.table-config tr td{
+  width:80%; /* 適宜変更 */
+  font-size:90%;
+  line-height:150%;
+  padding:3px 5px;
+}
+
+table.table-config tr td input,table.table-config tr td select{
+  vertical-align:middle;
+  margin:2px;
+}
+
+table.table-config tr td label{
+  margin-right:10px;
+}
+
+table.table-config tr td p.note{
+  margin:0;
+  padding:0;
+}
+
+table.table-config tr td ul{
+  margin:5px 0;
+}
+
+table.table-config tr td textarea{
+  font-size:90%;
+}
+table.table-config tr td table{
+  width:100%;
+}
+
+.curve-middle table.table-config{
+  border:0;
+}
+
+
+table.table-grid-3 tr td{ /* テーブルをグリッド式に並べるテーブル横3つ */
+  width:33%;
+}
+table.table-grid-4 tr td{ /* テーブルをグリッド式に並べるテーブル横4つ */
+  width:25%;
+}
+table.table-grid-5 tr td{ /* テーブルをグリッド式に並べるテーブル横4つ */
+  width:20%;
+}
+
+table.table-calendar{
+  width:100%;
+  margin:0 auto;
+  border-collapse:collapse;
+  clear:both;
+}
+
+table.table-calendar tr th {
+  width:14%;
+  text-align:center;
+  font-size:90%;
+  font-weight:bold;
+  color:#FFFFFF;
+  background:#9FA2A7;
+  border:1px solid #CCC;
+  padding:5px;
+}
+
+table.table-calendar tr th.sunday {
+  color:#FFEBE7;
+  background:#EE7979;
+}
+
+table.table-calendar tr th.saturday {
+  color:#E7EBFF;
+  background:#5279E7;
+}
+
+table.table-calendar tr td {
+  vertical-align:top;
+  font-size:80%;
+  border:1px solid #CCC;
+  padding:0;
+}
+
+table.table-calendar tr td.today {
+  background:#FFFFCC;
+}
+
+table.table-calendar tr td.holiday {
+  
+}
+
+table.table-calendar tr td h2{
+  width:auto;
+  background:#EEEEEE;
+  border-bottom:1px solid #CCC;
+  padding:3px;
+}
+
+table.table-calendar tr td h2 a{
+  text-decoration:none;
+  color:#000000;
+}
+
+table.table-calendar tr td.sunday h2{
+  background:#FFD6D5;
+}
+
+table.table-calendar tr td.saturday h2{
+  background:#D5D6FF;
+}
+
+table.table-calendar tr td .section{
+  margin:5px;
+}
+
+table.table-calendar tr td .section h3{
+  font-weight:normal;
+  line-height:135%;
+  margin:0;
+  padding:0;
+}
+
+/* =========== AD =========== */
+
+.ad-text{
+  list-style:none;
+  margin:10px 0;
+  padding:0;
+}
+
+.ad-text li a{
+  display:block; /* 一行全部クリッカブルにしてしまいます。 */
+  font-size:90%;
+  line-height:135%;
+  color:#0000FF; /* 既読を隠します */
+  text-decoration:none;
+  background:url(../images/common/pr.gif) 0 4px no-repeat;
+  padding-left:25px;
+}
+
+.ad-adsense{
+
+}
+
+.ad-rectangle{
+  width:250px;
+  text-align:center;
+}
+
+.ad-variable{
+  text-align:left; /* 適宜変更 */
+  background:#CCE0EB url(../images/common/ad-variable-right.gif) top right no-repeat;/* 適宜変更 */
+  margin:10px 0;
+}
+
+.ad-variable a{
+  display:block;
+}
+
+/* =========== ICON =========== */
+
+.icon-arrow{
+  padding-left:18px;
+  background:url(../images/common/icon-arrow.gif) 0 50% no-repeat;
+}
+
+.icon-tag{
+  padding-left:18px;
+  background:url(../images/common/icon-tag.gif) 0 50% no-repeat;
+}
+
+.icon-folder{
+  padding-left:18px;
+  background:url(../images/common/icon-folder.gif) 0 50% no-repeat;
+}
+
+.icon-keyword{
+  padding-left:18px;
+  background:url(../images/common/icon-keyword.gif) 0 50% no-repeat;
+}
+
+.icon-inlink{
+  padding-left:18px;
+  background:url(../images/common/icon-inlink.gif) 0 50% no-repeat;
+}
+
+.icon-page{
+  padding-left:18px;
+  background:url(../images/common/icon-page.gif) 0 50% no-repeat;
+}
+
+.icon-user{
+  padding-left:18px;
+  background:url(../images/common/icon-user.gif) 0 50% no-repeat;
+}
+
+.icon-download{
+  padding-left:18px;
+  background:url(../images/common/icon-download.gif) 0 50% no-repeat;
+}
+
+/* =========== OTEHR =========== */
+
+.users{ /* users 関連 */
+  color:#FF6666 !important;
+  background:#FFF0F0 !important;
+  white-space:nowrap;
+}
+
+em .users{
+  font-style:normal !important;
+  font-weight:bold !important;
+  color:#FF6666 !important;
+  background:#FFF0F0 !important;
+}
+
+strong .users{
+  color:#FF0000 !important;
+  background:#FFCCCC !important;
+}
+
+.nav img{
+  vertical-align:middle;
+  margin-bottom:2px;
+  margin-right:3px;
+}
+
+.tooltip{
+  font-size:80%;
+  line-height:135%;
+  width:300px;
+  text-align:left;
+  border:1px solid #CCC;
+  padding:10px;
+  background:#FFF;
+}
+
+.tooltip p{
+  margin:0;
+  padding:0;
+}

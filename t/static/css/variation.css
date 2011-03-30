@@ -1,0 +1,3272 @@
+/* =========================
+
+Author: Hatena
+Access:	info@hatena.ne.jp
+Comment: カラーバリエーション用用CSS
+Filename: variation.css
+Update: 2006/10/20
+Index:
+
+-box-curve-bar（deがない）
+-table-list(deがない）
+-box-curve-line
+-h-plain
+-h-bplain
+-h-lplain
+-list-tab
+-list-configmenu
+
+========================= */
+
+/* ==================
+box-curve-bar
+================== */
+/* ブルー */
+
+.box-curve-bar-dg{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-de h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#5279E7 url(../images/common/box-curve-bar-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-de h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-de .curve-middle{
+ _height:1%;
+ *display:inline-block;
+  border-right:1px solid #5279E7;
+  border-left:1px solid #5279E7;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-de span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:9px;
+  background:url(../images/common/box-curve-bar-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-bar-de span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:9px;
+  background:url(../images/common/box-curve-bar-bottom-left2.gif) bottom left no-repeat;
+}
+
+/* ダークグレー */
+
+.box-curve-bar-dg{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-dg h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#6B6D7B url(../images/common/box-curve-bar-dg-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-dg h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-dg-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-dg .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #6B6D7B;
+  border-left:1px solid #6B6D7B;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-dg span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-dg-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-dg span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-dg-bottom-right.gif) bottom right no-repeat;
+}
+
+/* グリーン */
+
+.box-curve-bar-gr{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-gr h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#4296A5 url(../images/common/box-curve-bar-gr-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-gr h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-gr-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-gr .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #4296A5;
+  border-left:1px solid #4296A5;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-gr span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-gr-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-gr span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-gr-bottom-right.gif) bottom right no-repeat;
+}
+
+/* パープル */
+
+.box-curve-bar-pr{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-pr h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#6B3CA5 url(../images/common/box-curve-bar-pr-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-pr h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-pr-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-pr .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #6B3CA5;
+  border-left:1px solid #6B3CA5;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-pr span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-pr-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-pr span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-pr-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ブラウン */
+
+.box-curve-bar-br{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-br h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#9C5D31 url(../images/common/box-curve-bar-br-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-br h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-br-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-br .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #9C5D31;
+  border-left:1px solid #9C5D31;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-br span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-br-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-br span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-br-bottom-right.gif) bottom right no-repeat;
+}
+
+/* レッド */
+
+.box-curve-bar-rd{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-rd h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#CE2418 url(../images/common/box-curve-bar-rd-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-rd h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-rd-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-rd .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #CE2418;
+  border-left:1px solid #CE2418;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-rd span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-rd-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-rd span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-rd-bottom-right.gif) bottom right no-repeat;
+}
+
+/* セピア */
+
+.box-curve-bar-sp{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-sp h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#DEBA6B url(../images/common/box-curve-bar-sp-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-sp h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-sp-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-sp .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #DEBA6B;
+  border-left:1px solid #DEBA6B;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-sp span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-sp-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-sp span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-sp-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ピンク */
+
+.box-curve-bar-pk{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-pk h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#EF8284 url(../images/common/box-curve-bar-pk-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-pk h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-pk-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-pk .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #EF8284;
+  border-left:1px solid #EF8284;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-pk span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-pk-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-pk span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-pk-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ティー */
+
+.box-curve-bar-te{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-te h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#B5CBA5 url(../images/common/box-curve-bar-te-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-te h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-te-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-te .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #B5CBA5;
+  border-left:1px solid #B5CBA5;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-te span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-te-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-te span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-te-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ライトグレー */
+
+.box-curve-bar-lg{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-lg h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#BDBAB5 url(../images/common/box-curve-bar-lg-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-lg h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-lg-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-lg .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #BDBAB5;
+  border-left:1px solid #BDBAB5;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-lg span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-lg-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-lg span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-lg-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ライトブルー */
+
+.box-curve-bar-lb{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-lb h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#8CB6FF url(../images/common/box-curve-bar-lb-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-lb h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-lb-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-lb .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #8CB6FF;
+  border-left:1px solid #8CB6FF;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-lb span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-lb-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-lb span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-lb-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ホワイト */
+
+.box-curve-bar-wh{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-wh h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#D1D1D1 url(../images/common/box-curve-bar-wh-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-wh h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-wh-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-wh .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #D7D7D7;
+  border-left:1px solid #D7D7D7;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-wh span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-wh-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-wh span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-wh-bottom-right.gif) bottom right no-repeat;
+}
+
+/* オレンジ */
+
+.box-curve-bar-or{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-or h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#FF9629 url(../images/common/box-curve-bar-or-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-or h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-or-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-or .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #FF9629;
+  border-left:1px solid #FF9629;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-or span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-or-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-or span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-or-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ライム */
+
+.box-curve-bar-li{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-li h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#5AE7A5 url(../images/common/box-curve-bar-li-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-li h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-li-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-li .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #5AE7A5;
+  border-left:1px solid #5AE7A5;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-li span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-li-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-li span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-li-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ブラック */
+
+.box-curve-bar-bl{
+  width:100%;
+  clear:both;
+  margin:10px 0;
+}
+
+.box-curve-bar-bl h2{
+  width:100%;
+  color:#FFFFFF;
+  background:#000 url(../images/common/box-curve-bar-bl-top-left.gif) top left no-repeat;
+  position:relative;
+}
+
+.box-curve-bar-bl h2 span.title{
+  display:block;
+  background:url(../images/common/box-curve-bar-bl-top-right.gif) top right no-repeat;
+  padding: 5px 8px;
+}
+
+.box-curve-bar-bl .curve-middle{
+ _height:1%;
+  *display:inline-block;
+  border-right:1px solid #000;
+  border-left:1px solid #000;
+  padding:10px 10px 3px 10px;
+}
+
+.box-curve-bar-bl span.curve-bottom{
+  clear:both;
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-bl-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-bar-bl span.curve-bottom span{
+  display:block;
+  font-size:1px;
+  height:8px;
+  background:url(../images/common/box-curve-bar-bl-bottom-right.gif) bottom right no-repeat;
+}
+
+
+/* ==================
+ table-list 
+================== */
+
+
+/* ダークグレー */
+
+table.table-list-dg thead tr th{
+  background:#6B6D7B;
+}
+
+table.table-list-dg thead tr th a.sort{
+  color:#EFEBEF;
+}
+
+table.table-list-dg thead tr th.curve-left{
+  background:#6B6D7B url(../images/common/box-curve-bar-dg-top-left.gif) top left no-repeat;
+}
+
+table.table-list-dg thead tr th.curve-right{
+  background:#6B6D7B url(../images/common/box-curve-bar-dg-top-right.gif) top right no-repeat;
+}
+
+table.table-list-dg tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-dg-middle.gif) top left repeat-y;
+}
+
+table.table-list-dg tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-dg-middle.gif) top right repeat-y;
+}
+
+table.table-list-dg tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-dg-middle.gif) top left repeat-y;
+}
+
+table.table-list-dg tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-dg-middle.gif) top right repeat-y;
+}
+
+table.table-list-dg tfoot tr td{
+  background:url(../images/common/box-curve-bar-dg-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-dg tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-dg-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-dg tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-dg-bottom-right.gif) bottom right no-repeat;
+}
+
+/* グリーン */
+
+table.table-list-gr thead tr th{
+  background:#4296A5;
+}
+
+table.table-list-gr thead tr th a.sort{
+  color:#E7FBE7;
+}
+
+table.table-list-gr thead tr th.curve-left{
+  background:#4296A5 url(../images/common/box-curve-bar-gr-top-left.gif) top left no-repeat;
+}
+
+table.table-list-gr thead tr th.curve-right{
+  background:#4296A5 url(../images/common/box-curve-bar-gr-top-right.gif) top right no-repeat;
+}
+
+table.table-list-gr tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-gr-middle.gif) top left repeat-y;
+}
+
+table.table-list-gr tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-gr-middle.gif) top right repeat-y;
+}
+
+table.table-list-gr tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-gr-middle.gif) top left repeat-y;
+}
+
+table.table-list-gr tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-gr-middle.gif) top right repeat-y;
+}
+
+table.table-list-gr tfoot tr td{
+  background:url(../images/common/box-curve-bar-gr-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-gr tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-gr-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-gr tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-gr-bottom-right.gif) bottom right no-repeat;
+}
+
+/* パープル */
+
+table.table-list-pr thead tr th{
+  background:#6B3CA5;
+}
+
+table.table-list-pr thead tr th a.sort{
+  color:#FFE7F7;
+}
+
+table.table-list-pr thead tr th.curve-left{
+  background:#6B3CA5 url(../images/common/box-curve-bar-pr-top-left.gif) top left no-repeat;
+}
+
+table.table-list-pr thead tr th.curve-right{
+  background:#6B3CA5 url(../images/common/box-curve-bar-pr-top-right.gif) top right no-repeat;
+}
+
+table.table-list-pr tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-pr-middle.gif) top left repeat-y;
+}
+
+table.table-list-pr tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-pr-middle.gif) top right repeat-y;
+}
+
+table.table-list-pr tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-pr-middle.gif) top left repeat-y;
+}
+
+table.table-list-pr tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-pr-middle.gif) top right repeat-y;
+}
+
+table.table-list-pr tfoot tr td{
+  background:url(../images/common/box-curve-bar-pr-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-pr tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-pr-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-pr tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-pr-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ブラウン */
+
+table.table-list-br thead tr th{
+  background:#9C5D31;
+}
+
+table.table-list-br thead tr th a.sort{
+  color:#FFEFDE;
+}
+
+table.table-list-br thead tr th.curve-left{
+  background:#9C5D31 url(../images/common/box-curve-bar-br-top-left.gif) top left no-repeat;
+}
+
+table.table-list-br thead tr th.curve-right{
+  background:#9C5D31 url(../images/common/box-curve-bar-br-top-right.gif) top right no-repeat;
+}
+
+table.table-list-br tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-br-middle.gif) top left repeat-y;
+}
+
+table.table-list-br tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-br-middle.gif) top right repeat-y;
+}
+
+table.table-list-br tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-br-middle.gif) top left repeat-y;
+}
+
+table.table-list-br tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-br-middle.gif) top right repeat-y;
+}
+
+table.table-list-br tfoot tr td{
+  background:url(../images/common/box-curve-bar-br-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-br tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-br-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-br tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-br-bottom-right.gif) bottom right no-repeat;
+}
+
+/* レッド */
+
+table.table-list-rd thead tr th{
+  background:#CE2418;
+}
+
+table.table-list-rd thead tr th a.sort{
+  color:#FFEBEF;
+}
+
+table.table-list-rd thead tr th.curve-left{
+  background:#CE2418 url(../images/common/box-curve-bar-rd-top-left.gif) top left no-repeat;
+}
+
+table.table-list-rd thead tr th.curve-right{
+  background:#CE2418 url(../images/common/box-curve-bar-rd-top-right.gif) top right no-repeat;
+}
+
+table.table-list-rd tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-rd-middle.gif) top left repeat-y;
+}
+
+table.table-list-rd tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-rd-middle.gif) top right repeat-y;
+}
+
+table.table-list-rd tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-rd-middle.gif) top left repeat-y;
+}
+
+table.table-list-rd tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-barrd-middle.gif) top right repeat-y;
+}
+
+table.table-list-rd tfoot tr td{
+  background:url(../images/common/box-curve-bar-rd-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-rd tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-rd-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-rd tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-rd-bottom-right.gif) bottom right no-repeat;
+}
+
+/* セピア */
+
+table.table-list-sp thead tr th{
+  background:#DEBA6B;
+}
+
+table.table-list-sp thead tr th a.sort{
+  color:#FFF3D6;
+}
+
+table.table-list-sp thead tr th.curve-left{
+  background:#DEBA6B url(../images/common/box-curve-bar-sp-top-left.gif) top left no-repeat;
+}
+
+table.table-list-sp thead tr th.curve-right{
+  background:#DEBA6B url(../images/common/box-curve-bar-sp-top-right.gif) top right no-repeat;
+}
+
+table.table-list-sp tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-sp-middle.gif) top left repeat-y;
+}
+
+table.table-list-sp tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-sp-middle.gif) top right repeat-y;
+}
+
+table.table-list-sp tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-sp-middle.gif) top left repeat-y;
+}
+
+table.table-list-sp tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-sp-middle.gif) top right repeat-y;
+}
+
+table.table-list-sp tfoot tr td{
+  background:url(../images/common/box-curve-bar-sp-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-sp tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-sp-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-sp tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-sp-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ピンク */
+
+table.table-list-pk thead tr th{
+  background:#EF8284;
+}
+
+table.table-list-pk thead tr th a.sort{
+  color:#FFE7E7;
+}
+
+table.table-list-pk thead tr th.curve-left{
+  background:#EF8284 url(../images/common/box-curve-bar-pk-top-left.gif) top left no-repeat;
+}
+
+table.table-list-pk thead tr th.curve-right{
+  background:#EF8284 url(../images/common/box-curve-bar-pk-top-right.gif) top right no-repeat;
+}
+
+table.table-list-pk tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-pk-middle.gif) top left repeat-y;
+}
+
+table.table-list-pk tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-pk-middle.gif) top right repeat-y;
+}
+
+table.table-list-pk tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-pk-middle.gif) top left repeat-y;
+}
+
+table.table-list-pk tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-pk-middle.gif) top right repeat-y;
+}
+
+table.table-list-pk tfoot tr td{
+  background:url(../images/common/box-curve-bar-pk-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-pk tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-pk-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-pk tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-pk-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ティー */
+
+table.table-list-te thead tr th{
+  background:#B5CBA5;
+}
+
+table.table-list-te thead tr th a.sort{
+  color:#A6C4F2;
+}
+
+table.table-list-te thead tr th.curve-left{
+  background:#B5CBA5 url(../images/common/box-curve-bar-te-top-left.gif) top left no-repeat;
+}
+
+table.table-list-te thead tr th.curve-right{
+  background:#B5CBA5 url(../images/common/box-curve-bar-te-top-right.gif) top right no-repeat;
+}
+
+table.table-list-te tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-te-middle.gif) top left repeat-y;
+}
+
+table.table-list-te tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-te-middle.gif) top right repeat-y;
+}
+
+table.table-list-te tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-te-middle.gif) top left repeat-y;
+}
+
+table.table-list-te tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-te-middle.gif) top right repeat-y;
+}
+
+table.table-list-te tfoot tr td{
+  background:url(../images/common/box-curve-bar-te-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-te tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-te-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-te tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-te-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ライトグレー */
+
+table.table-list-lg thead tr th{
+  background:#BDBAB5;
+}
+
+table.table-list-lg thead tr th a.sort{
+  color:#EFEFEF;
+}
+
+table.table-list-lg thead tr th.curve-left{
+  background:#BDBAB5 url(../images/common/box-curve-bar-lg-top-left.gif) top left no-repeat;
+}
+
+table.table-list-lg thead tr th.curve-right{
+  background:#BDBAB5 url(../images/common/box-curve-bar-lg-top-right.gif) top right no-repeat;
+}
+
+table.table-list-lg tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-lg-middle.gif) top left repeat-y;
+}
+
+table.table-list-lg tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-lg-middle.gif) top right repeat-y;
+}
+
+table.table-list-lg tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-lg-middle.gif) top left repeat-y;
+}
+
+table.table-list-lg tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-lg-middle.gif) top right repeat-y;
+}
+
+table.table-list-lg tfoot tr td{
+  background:url(../images/common/box-curve-bar-lg-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-lg tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-lg-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-lg tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-lg-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ライトブルー */
+
+table.table-list-lb thead tr th{
+  background:#8CB6FF;
+}
+
+table.table-list-lb thead tr th a.sort{
+  color:#E7FBFF;
+}
+
+table.table-list-lb thead tr th.curve-left{
+  background:#8CB6FF url(../images/common/box-curve-bar-lb-top-left.gif) top left no-repeat;
+}
+
+table.table-list-lb thead tr th.curve-right{
+  background:#8CB6FF url(../images/common/box-curve-bar-lb-top-right.gif) top right no-repeat;
+}
+
+table.table-list-lb tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-lb-middle.gif) top left repeat-y;
+}
+
+table.table-list-lb tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-lb-middle.gif) top right repeat-y;
+}
+
+table.table-list-lb tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-lb-middle.gif) top left repeat-y;
+}
+
+table.table-list-lb tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-lb-middle.gif) top right repeat-y;
+}
+
+table.table-list-lb tfoot tr td{
+  background:url(../images/common/box-curve-bar-lb-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-lb tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-lb-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-lb tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-lb-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ホワイト */
+
+table.table-list-wh thead tr th{
+  background:#BFBFBF;
+}
+
+table.table-list-wh thead tr th a.sort{
+  color:#EDEDED;
+}
+
+table.table-list-wh thead tr th.curve-left{
+  background:#BFBFBF url(../images/common/box-curve-bar-wh-top-left.gif) top left no-repeat;
+}
+
+table.table-list-wh thead tr th.curve-right{
+  background:#BFBFBF url(../images/common/box-curve-bar-wh-top-right.gif) top right no-repeat;
+}
+
+table.table-list-wh tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-wh-middle.gif) top left repeat-y;
+}
+
+table.table-list-wh tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-wh-middle.gif) top right repeat-y;
+}
+
+table.table-list-wh tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-wh-middle.gif) top left repeat-y;
+}
+
+table.table-list-wh tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-wh-middle.gif) top right repeat-y;
+}
+
+table.table-list-wh tfoot tr td{
+  background:url(../images/common/box-curve-bar-wh-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-wh tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-wh-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-wh tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-wh-bottom-right.gif) bottom right no-repeat;
+}
+
+/* オレンジ */
+
+table.table-list-or thead tr th{
+  background:#FF9629;
+}
+
+table.table-list-or thead tr th a.sort{
+  color:#FFFBDE;
+}
+
+table.table-list-or thead tr th.curve-left{
+  background:#FF9629 url(../images/common/box-curve-bar-or-top-left.gif) top left no-repeat;
+}
+
+table.table-list-or thead tr th.curve-right{
+  background:#FF9629 url(../images/common/box-curve-bar-or-top-right.gif) top right no-repeat;
+}
+
+table.table-list-or tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-or-middle.gif) top left repeat-y;
+}
+
+table.table-list-or tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-or-middle.gif) top right repeat-y;
+}
+
+table.table-list-or tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-or-middle.gif) top left repeat-y;
+}
+
+table.table-list-or tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-or-middle.gif) top right repeat-y;
+}
+
+table.table-list-or tfoot tr td{
+  background:url(../images/common/box-curve-bar-or-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-or tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-or-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-or tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-or-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ライム */
+
+table.table-list-li thead tr th{
+  background:#5AE7A5;
+}
+
+table.table-list-li thead tr th a.sort{
+  color:#E7FFF7;
+}
+
+table.table-list-li thead tr th.curve-left{
+  background:#5AE7A5 url(../images/common/box-curve-bar-li-top-left.gif) top left no-repeat;
+}
+
+table.table-list-li thead tr th.curve-right{
+  background:#5AE7A5 url(../images/common/box-curve-bar-li-top-right.gif) top right no-repeat;
+}
+
+table.table-list-li tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-li-middle.gif) top left repeat-y;
+}
+
+table.table-list-li tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-li-middle.gif) top right repeat-y;
+}
+
+table.table-list-li tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-li-middle.gif) top left repeat-y;
+}
+
+table.table-list-li tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-li-middle.gif) top right repeat-y;
+}
+
+table.table-list-li tfoot tr td{
+  background:url(../images/common/box-curve-bar-li-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-li tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-li-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-li tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-li-bottom-right.gif) bottom right no-repeat;
+}
+
+/* ブラック */
+
+table.table-list-bl thead tr th{
+  background:#000000;
+}
+
+table.table-list-bl thead tr th a.sort{
+  color:#E7E7E7;
+}
+
+table.table-list-bl thead tr th.curve-left{
+  background:#000000 url(../images/common/box-curve-bar-bl-top-left.gif) top left no-repeat;
+}
+
+table.table-list-bl thead tr th.curve-right{
+  background:#000000 url(../images/common/box-curve-bar-bl-top-right.gif) top right no-repeat;
+}
+
+table.table-list-bl tbody tr td.line-left{
+  background:url(../images/common/box-curve-bar-bl-middle.gif) top left repeat-y;
+}
+
+table.table-list-bl tbody tr td.line-right{
+  background:url(../images/common/box-curve-bar-bl-middle.gif) top right repeat-y;
+}
+
+table.table-list-bl tbody tr.odd td.line-left{
+  background:#F0F0FF url(../images/common/box-curve-bar-bl-middle.gif) top left repeat-y;
+}
+
+table.table-list-bl tbody tr.odd td.line-right{
+  background:#F0F0FF url(../images/common/box-curve-bar-bl-middle.gif) top right repeat-y;
+}
+
+table.table-list-bl tfoot tr td{
+  background:url(../images/common/box-curve-bar-bl-middle.gif) bottom right repeat-x;
+}
+
+table.table-list-bl tfoot tr td.curve-left{
+  background:url(../images/common/box-curve-bar-bl-bottom-left.gif) bottom left no-repeat;
+}
+
+table.table-list-bl tfoot tr td.curve-right{
+  background:url(../images/common/box-curve-bar-bl-bottom-right.gif) bottom right no-repeat;
+}
+
+
+/* ==================
+.box-curve-line
+================== */
+
+
+/* ブルー */
+
+.box-curve-line-de{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-de:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-de span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-line-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-de span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-line-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-de span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-de span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-bottom-left2.gif) bottom left no-repeat;
+}
+
+.box-curve-line-de .curve-middle{
+  line-height:135%;
+  *display:inline-block;
+  border-left:1px solid #5279E7;
+  border-right:1px solid #5279E7;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+/* ダークグレー */
+
+.box-curve-line-dg{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-dg:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-dg span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-dg-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-dg span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-dg-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-dg span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-dg-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-dg span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-dg-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-dg .curve-middle{
+  line-height:135%;
+  *display:inline-block;
+  border-left:1px solid #6B696B;
+  border-right:1px solid #6B696B;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+/* グリーン */
+
+.box-curve-line-gr{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-gr:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-gr span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-gr-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-gr span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-gr-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-gr span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-gr-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-gr span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-gr-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-gr .curve-middle{
+  line-height:135%;
+  *display:inline-block;
+  border-left:1px solid #529AA5;
+  border-right:1px solid #529AA5;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+/* パープル */
+
+.box-curve-line-pr{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-pr:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-pr span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-pr-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-pr span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-pr-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-pr span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-pr-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-pr span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-pr-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-pr .curve-middle{
+  line-height:135%;
+  border-left:1px solid #7B49CE;
+  border-right:1px solid #7B49CE;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+
+/* ブラウン */
+
+.box-curve-line-br{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-br:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-br span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-br-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-br span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-br-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-br span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-br-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-br span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-br-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-br .curve-middle{
+  line-height:135%;
+  border-left:1px solid #BD6D42;
+  border-right:1px solid #BD6D42;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+/* レッド */
+
+.box-curve-line-rd{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-rd:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-rd span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-rd-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-rd span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-rd-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-rd span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-rd-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-rd span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-rd-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-rd .curve-middle{
+  line-height:135%;
+  border-left:1px solid #E74542;
+  border-right:1px solid #E74542;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+
+/* セピア */
+
+.box-curve-line-sp{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-sp:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-sp span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-sp-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-sp span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-sp-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-sp span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-sp-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-sp span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-sp-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-sp .curve-middle{
+  line-height:135%;
+  border-left:1px solid #DEC363;
+  border-right:1px solid #DEC363;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+
+/* ピンク */
+
+.box-curve-line-pk{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-pk:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-pk span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-pk-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-pk span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-pk-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-pk span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-pk-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-pk span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-pk-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-pk .curve-middle{
+  line-height:135%;
+  border-left:1px solid #F78E84;
+  border-right:1px solid #F78E84;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+/* ティー */
+
+.box-curve-line-te{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-te:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-te span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-te-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-te span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-te-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-te span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-te-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-te span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-te-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-te .curve-middle{
+  line-height:135%;
+  border-left:1px solid #B5CF9C;
+  border-right:1px solid #B5CF9C;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+/* ライトグレー */
+
+.box-curve-line-lg{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-lg:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-lg span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-lg-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-lg span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-lg-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-lg span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-lg-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-lg span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-lg-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-lg .curve-middle{
+  line-height:135%;
+  border-left:1px solid #BDBEBD;
+  border-right:1px solid #BDBEBD;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+/* ライトブルー */
+
+.box-curve-line-lb{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-lb:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-lb span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-lb-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-lb span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-lb-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-lb span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-lb-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-lb span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-lb-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-lb .curve-middle{
+  line-height:135%;
+  border-left:1px solid #8CBEFF;
+  border-right:1px solid #8CBEFF;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+/* ホワイト */
+
+.box-curve-line-wh{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-wh:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-wh span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-wh-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-wh span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-wh-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-wh span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-wh-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-wh span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-wh-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-wh .curve-middle{
+  line-height:135%;
+  border-left:1px solid #CECFCE;
+  border-right:1px solid #CECFCE;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+/* ホワイト */
+
+.box-curve-line-or{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-or:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-or span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-or-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-or span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-or-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-or span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-or-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-or span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-or-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-or .curve-middle{
+  line-height:135%;
+  border-left:1px solid #FFC321;
+  border-right:1px solid #FFC321;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+
+/* ライム */
+
+.box-curve-line-li{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-li:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-li span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-li-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-li span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-li-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-li span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-li-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-li span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-li-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-li .curve-middle{
+  line-height:135%;
+  border-left:1px solid #84EFB5;
+  border-right:1px solid #84EFB5;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+
+/* ブラック */
+
+.box-curve-line-bl{
+  background:#FFF;
+  clear:both;
+ _height:1%;
+}
+
+.box-curve-line-bl:after{
+ display:block;
+ clear:both;
+ content:"";
+}
+
+.box-curve-line-bl span.curve-top{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bl-top-right.gif) top right no-repeat;
+}
+
+.box-curve-line-bl span.curve-top span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bl-top-left.gif) top left no-repeat;
+}
+
+.box-curve-line-bl span.curve-bottom{
+  clear:both;
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-bl-bottom-left.gif) bottom left no-repeat;
+}
+
+.box-curve-line-bl span.curve-bottom span{
+  display:block;
+  width:100%;
+  height:8px;
+  font-size:1px;
+  background:url(../images/common/box-curve-bar-bl-bottom-right.gif) bottom right no-repeat;
+}
+
+.box-curve-line-bl .curve-middle{
+  line-height:135%;
+  border-left:1px solid #000;
+  border-right:1px solid #000;
+  margin:0;
+  padding:5px 10px;
+  *display:inline-block;
+ _height:1%;
+}
+
+/* ==================
+.h-plain
+================== */
+
+.h-plain , .h-plain-bl{ color:#000;margin:1.5em 0 0.5em 0; }
+.h-plain-de{ color:#00289C;margin:1.5em 0 0.5em 0; }
+.h-plain-dg{ color:#424952;margin:1.5em 0 0.5em 0; }
+.h-plain-gr{ color:#216D73;margin:1.5em 0 0.5em 0; }
+.h-plain-pr{ color:#42207B;margin:1.5em 0 0.5em 0; }
+.h-plain-br{ color:#733818;margin:1.5em 0 0.5em 0; }
+.h-plain-rd{ color:#9C0400;margin:1.5em 0 0.5em 0; }
+.h-plain-sp{ color:#BD8642;margin:1.5em 0 0.5em 0; }
+.h-plain-pk{ color:#CE5D63;margin:1.5em 0 0.5em 0; }
+.h-plain-te{ color:#94AA7B;margin:1.5em 0 0.5em 0; }
+.h-plain-lg{ color:#9C9694;margin:1.5em 0 0.5em 0; }
+.h-plain-or{ color:#FF7918;margin:1.5em 0 0.5em 0; }
+.h-plain-li{ color:#42BA84;margin:1.5em 0 0.5em 0; }
+
+
+/* ==================
+.h-bline
+================== */
+
+
+.h-bline-bl{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #000;
+}
+
+.h-bline-de{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #00289C;
+}
+
+.h-bline-dg{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #424952;
+}
+
+.h-bline-gr{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #216D73;
+}
+
+.h-bline-pr{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #42207B;
+}
+
+.h-bline-br{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #733818;
+}
+
+.h-bline-rd{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #9C0400;
+}
+
+.h-bline-sp{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #BD8642;
+}
+
+.h-bline-pk{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #CE5D63;
+}
+
+.h-bline-te{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #94AA7B;
+}
+
+.h-bline-lg{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #9C9694;
+}
+
+.h-bline-or{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #FF7918;
+}
+
+.h-bline-li{
+  margin:1.5em 0 0.5em 0;
+  padding:0 0 2px 3px;
+  border-bottom:1px solid #42BA84;
+}
+
+
+/* ==================
+.h-lline
+================== */
+
+
+.h-lline-bl{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #000;
+}
+
+.h-lline-de{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #00289C;
+}
+
+.h-lline-dg{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #424952;
+}
+
+.h-lline-gr{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #216D73;
+}
+
+.h-lline-pr{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #42207B;
+}
+
+.h-lline-br{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #733818;
+}
+
+.h-lline-rd{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #9C0400;
+}
+
+.h-lline-sp{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #BD8642;
+}
+
+.h-lline-pk{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #CE5D63;
+}
+
+.h-lline-te{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #94AA7B;
+}
+
+.h-lline-lg{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #9C9694;
+}
+
+.h-lline-or{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #FF7918;
+}
+
+.h-lline-li{
+  margin:1.5em 0 0.5em 0;
+  padding:2px 0 2px 8px;
+  border-left:5px solid #42BA84;
+}
+
+
+/* ==================
+.box-curve
+================== */
+
+.box-curve-de{
+  background:#DEE3FF;
+}
+
+.box-curve-bl{
+  background:#E7E7E7;
+}
+
+.box-curve-br{
+  background:#FFEFDE;
+}
+
+.box-curve-dg{
+  background:#EFEBEF;
+}
+
+.box-curve-gr{
+  background:#E7FBE7;
+}
+
+.box-curve-lb{
+  background:#F7FBFF;
+}
+
+.box-curve-lg{
+  background:#EFEFEF;
+}
+
+.box-curve-li{
+  background:#F7FFF7;
+}
+
+.box-curve-or{
+  background:#FFFBDE;
+}
+
+.box-curve-pk{
+  background:#FFE7E7;
+}
+
+.box-curve-pr{
+  background:#FFE7F7;
+}
+
+.box-curve-rd{
+  background:#FFEBEF;
+}
+
+.box-curve-sp{
+  background:#FFF3D6;
+}
+
+.box-curve-te{
+  background:#EFFBE7;
+}
+
+.box-curve-wh{
+  background:#FFF;
+}
+
+/* ==================
+.list-tab
+================== */
+
+ul.list-tab-de li{
+  background:url(../images/common/tab-de-off.gif) no-repeat;
+}
+
+ul.list-tab-de li.select{
+  background:url(../images/common/tab-de-on.gif) no-repeat;
+}
+
+ul.list-tab-dg li{
+  background:url(../images/common/tab-dg-off.gif) no-repeat;
+}
+
+ul.list-tab-dg li.select{
+  background:url(../images/common/tab-dg-on.gif) no-repeat;
+}
+
+ul.list-tab-gr li{
+  background:url(../images/common/tab-gr-off.gif) no-repeat;
+}
+
+ul.list-tab-gr li.select{
+  background:url(../images/common/tab-gr-on.gif) no-repeat;
+}
+
+ul.list-tab-pr li{
+  background:url(../images/common/tab-pr-off.gif) no-repeat;
+}
+
+ul.list-tab-pr li.select{
+  background:url(../images/common/tab-pr-on.gif) no-repeat;
+}
+
+ul.list-tab-br li{
+  background:url(../images/common/tab-br-off.gif) no-repeat;
+}
+
+ul.list-tab-br li.select{
+  background:url(../images/common/tab-br-on.gif) no-repeat;
+}
+
+ul.list-tab-rd li{
+  background:url(../images/common/tab-rd-off.gif) no-repeat;
+}
+
+ul.list-tab-rd li.select{
+  background:url(../images/common/tab-rd-on.gif) no-repeat;
+}
+
+ul.list-tab-sp li{
+  background:url(../images/common/tab-sp-off.gif) no-repeat;
+}
+
+ul.list-tab-sp li.select{
+  background:url(../images/common/tab-sp-on.gif) no-repeat;
+}
+
+ul.list-tab-pk li{
+  background:url(../images/common/tab-pk-off.gif) no-repeat;
+}
+
+ul.list-tab-pk li.select{
+  background:url(../images/common/tab-pk-on.gif) no-repeat;
+}
+
+ul.list-tab-te li{
+  background:url(../images/common/tab-te-off.gif) no-repeat;
+}
+
+ul.list-tab-te li.select{
+  background:url(../images/common/tab-te-on.gif) no-repeat;
+}
+
+ul.list-tab-lg li{
+  background:url(../images/common/tab-lg-off.gif) no-repeat;
+}
+
+ul.list-tab-lg li.select{
+  background:url(../images/common/tab-lg-on.gif) no-repeat;
+}
+
+ul.list-tab-lb li{
+  background:url(../images/common/tab-lb-off.gif) no-repeat;
+}
+
+ul.list-tab-lb li.select{
+  background:url(../images/common/tab-lb-on.gif) no-repeat;
+}
+
+ul.list-tab-wh li{
+  background:url(../images/common/tab-wh-off.gif) no-repeat;
+}
+
+ul.list-tab-wh li.select{
+  background:url(../images/common/tab-wh-on.gif) no-repeat;
+}
+
+ul.list-tab-or li{
+  background:url(../images/common/tab-or-off.gif) no-repeat;
+}
+
+ul.list-tab-or li.select{
+  background:url(../images/common/tab-or-on.gif) no-repeat;
+}
+
+ul.list-tab-li li{
+  background:url(../images/common/tab-li-off.gif) no-repeat;
+}
+
+ul.list-tab-li li.select{
+  background:url(../images/common/tab-li-on.gif) no-repeat;
+}
+
+ul.list-tab-li bl{
+  background:url(../images/common/tab-bl-off.gif) no-repeat;
+}
+
+ul.list-tab-bl li.select{
+  background:url(../images/common/tab-bl-on.gif) no-repeat;
+}
+
+ul.list-tab2-de{
+  background:url(../images/common/box-curve-bar-de-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-de li{
+  background:url(../images/common/tab2-de-off.gif) no-repeat;
+}
+
+ul.list-tab2-de li.select{
+  background:url(../images/common/tab2-de-on.gif) no-repeat;
+}
+
+ul.list-tab2-dg{
+  background:url(../images/common/box-curve-bar-dg-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-dg li{
+  background:url(../images/common/tab2-dg-off.gif) no-repeat;
+}
+
+ul.list-tab2-dg li.select{
+  background:url(../images/common/tab2-dg-on.gif) no-repeat;
+}
+
+ul.list-tab2-gr{
+  background:url(../images/common/box-curve-bar-gr-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-gr li{
+  background:url(../images/common/tab2-gr-off.gif) no-repeat;
+}
+
+ul.list-tab2-gr li.select{
+  background:url(../images/common/tab2-gr-on.gif) no-repeat;
+}
+
+ul.list-tab2-pr{
+  background:url(../images/common/box-curve-bar-pr-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-pr li{
+  background:url(../images/common/tab2-pr-off.gif) no-repeat;
+}
+
+ul.list-tab2-pr li.select{
+  background:url(../images/common/tab2-pr-on.gif) no-repeat;
+}
+
+ul.list-tab2-te{
+  background:url(../images/common/box-curve-bar-te-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-te li{
+  background:url(../images/common/tab2-te-off.gif) no-repeat;
+}
+
+ul.list-tab2-te li.select{
+  background:url(../images/common/tab2-te-on.gif) no-repeat;
+}
+
+ul.list-tab2-br{
+  background:url(../images/common/box-curve-bar-br-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-br li{
+  background:url(../images/common/tab2-br-off.gif) no-repeat;
+}
+
+ul.list-tab2-br li.select{
+  background:url(../images/common/tab2-br-on.gif) no-repeat;
+}
+
+ul.list-tab2-rd{
+  background:url(../images/common/box-curve-bar-rd-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-rd li{
+  background:url(../images/common/tab2-rd-off.gif) no-repeat;
+}
+
+ul.list-tab2-rd li.select{
+  background:url(../images/common/tab2-rd-on.gif) no-repeat;
+}
+
+ul.list-tab2-sp{
+  background:url(../images/common/box-curve-bar-sp-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-sp li{
+  background:url(../images/common/tab2-sp-off.gif) no-repeat;
+}
+
+ul.list-tab2-sp li.select{
+  background:url(../images/common/tab2-sp-on.gif) no-repeat;
+}
+
+ul.list-tab2-pk{
+  background:url(../images/common/box-curve-bar-pk-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-pk li{
+  background:url(../images/common/tab2-pk-off.gif) no-repeat;
+}
+
+ul.list-tab2-pk li.select{
+  background:url(../images/common/tab2-pk-on.gif) no-repeat;
+}
+
+ul.list-tab2-lg{
+  background:url(../images/common/box-curve-bar-lg-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-lg li{
+  background:url(../images/common/tab2-lg-off.gif) no-repeat;
+}
+
+ul.list-tab2-lg li.select{
+  background:url(../images/common/tab2-lg-on.gif) no-repeat;
+}
+
+ul.list-tab2-lb{
+  background:url(../images/common/box-curve-bar-lb-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-lb li{
+  background:url(../images/common/tab2-lb-off.gif) no-repeat;
+}
+
+ul.list-tab2-lb li.select{
+  background:url(../images/common/tab2-lb-on.gif) no-repeat;
+}
+
+ul.list-tab2-wh{
+  background:url(../images/common/box-curve-bar-wh-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-wh li{
+  background:url(../images/common/tab2-wh-off.gif) no-repeat;
+}
+
+ul.list-tab2-wh li.select{
+  background:url(../images/common/tab2-wh-on.gif) no-repeat;
+}
+
+ul.list-tab2-or{
+  background:url(../images/common/box-curve-bar-or-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-or li{
+  background:url(../images/common/tab2-or-off.gif) no-repeat;
+}
+
+ul.list-tab2-or li.select{
+  background:url(../images/common/tab2-or-on.gif) no-repeat;
+}
+
+ul.list-tab2-li{
+  background:url(../images/common/box-curve-bar-li-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-li li{
+  background:url(../images/common/tab2-li-off.gif) no-repeat;
+}
+
+ul.list-tab2-li li.select{
+  background:url(../images/common/tab2-li-on.gif) no-repeat;
+}
+
+ul.list-tab2-bl{
+  background:url(../images/common/box-curve-bar-bl-middle.gif) left bottom repeat-x; 
+}
+
+ul.list-tab2-bl li{
+  background:url(../images/common/tab2-bl-off.gif) no-repeat;
+}
+
+ul.list-tab2-bl li.select{
+  background:url(../images/common/tab2-bl-on.gif) no-repeat;
+}
+
+/* ==================
+.list-configmenu
+================== */
+
+ul.list-configmenu-de li{
+  background:#8EA2FF;
+}
+
+ul.list-configmenu-de li.select{
+  background:#7489EE;
+}
+
+ul.list-configmenu-de li ul{
+  border:1px solid #7489EE;
+}
+
+ul.list-configmenu-de li ul li.select{
+  background:#E7EBFF;
+}
+
+ul.list-configmenu-de li#list-top{
+  background:#8EA2FF url(../images/common/menu-top-de.gif) center top no-repeat;
+}
+
+ul.list-configmenu-de li#list-bottom{
+  background:#8EA2FF url(../images/common/menu-bottom-de.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-de li#list-top-select{
+  background:#7489EE url(../images/common/menu-top-de.gif) center top no-repeat;
+}
+
+ul.list-configmenu-de li#list-bottom-select{
+  background:#7489EE url(../images/common/menu-bottom-de.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-dg li{
+  background:#ABB1BB;
+}
+
+ul.list-configmenu-dg li.select{
+  background:#949AA5;
+}
+
+ul.list-configmenu-dg li ul{
+  border:1px solid #949AA5;
+}
+
+ul.list-configmenu-dg li ul li.select{
+  background:#EFEBEF;
+}
+
+ul.list-configmenu-dg li#list-top{
+  background:#ABB1BB url(../images/common/menu-top-dg.gif) center top no-repeat;
+}
+
+ul.list-configmenu-dg li#list-bottom{
+  background:#ABB1BB url(../images/common/menu-bottom-dg.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-dg li#list-top-select{
+  background:#949AA5 url(../images/common/menu-top-dg.gif) center top no-repeat;
+}
+
+ul.list-configmenu-dg li#list-bottom-select{
+  background:#949AA5 url(../images/common/menu-bottom-dg.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-gr li{
+  background:#82C6D2;
+}
+
+ul.list-configmenu-gr li.select{
+  background:#6EB6C2;
+}
+
+ul.list-configmenu-gr li ul{
+  border:1px solid #6EB6C2;
+}
+
+ul.list-configmenu-gr li ul li.select{
+  background:#E7FBE7;
+}
+
+ul.list-configmenu-gr li#list-top{
+  background:#82C6D2 url(../images/common/menu-top-gr.gif) center top no-repeat;
+}
+
+ul.list-configmenu-gr li#list-bottom{
+  background:#82C6D2 url(../images/common/menu-bottom-gr.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-gr li#list-top-select{
+  background:#6EB6C2 url(../images/common/menu-top-gr.gif) center top no-repeat;
+}
+
+ul.list-configmenu-gr li#list-bottom-select{
+  background:#6EB6C2 url(../images/common/menu-bottom-gr.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-pr li{
+  background:#B88FE9;
+}
+
+ul.list-configmenu-pr li.select{
+  background:#9E77CD;
+}
+
+ul.list-configmenu-pr li ul{
+  border:1px solid #9E77CD;
+}
+
+ul.list-configmenu-pr li ul li.select{
+  background:#FFE7F7;
+}
+
+ul.list-configmenu-pr li#list-top{
+  background:#B88FE9 url(../images/common/menu-top-pr.gif) center top no-repeat;
+}
+
+ul.list-configmenu-pr li#list-bottom{
+  background:#B88FE9 url(../images/common/menu-bottom-pr.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-pr li#list-top-select{
+  background:#9E77CD url(../images/common/menu-top-pr.gif) center top no-repeat;
+}
+
+ul.list-configmenu-pr li#list-bottom-select{
+  background:#9E77CD url(../images/common/menu-bottom-pr.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-br li{
+  background:#D09A7E;
+}
+
+ul.list-configmenu-br li.select{
+  background:#C37E5B;
+}
+
+ul.list-configmenu-br li ul{
+  border:1px solid #C37E5B;
+}
+
+ul.list-configmenu-br li ul li.select{
+  background:#FFEFDE;
+}
+
+ul.list-configmenu-br li#list-top{
+  background:#D09A7E url(../images/common/menu-top-br.gif) center top no-repeat;
+}
+
+ul.list-configmenu-br li#list-bottom{
+  background:#D09A7E url(../images/common/menu-bottom-br.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-br li#list-top-select{
+  background:#C37E5B url(../images/common/menu-top-br.gif) center top no-repeat;
+}
+
+ul.list-configmenu-br li#list-bottom-select{
+  background:#C37E5B url(../images/common/menu-bottom-br.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-rd li{
+  background:#F87A71;
+}
+
+ul.list-configmenu-rd li.select{
+  background:#F75D52;
+}
+
+ul.list-configmenu-rd li ul{
+  border:1px solid #F75D52;
+}
+
+ul.list-configmenu-rd li ul li.select{
+  background:#FFEBEF;
+}
+
+ul.list-configmenu-rd li#list-top{
+  background:#F87A71 url(../images/common/menu-top-rd.gif) center top no-repeat;
+}
+
+ul.list-configmenu-rd li#list-bottom{
+  background:#F87A71 url(../images/common/menu-bottom-rd.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-rd li#list-top-select{
+  background:#F75D52 url(../images/common/menu-top-rd.gif) center top no-repeat;
+}
+
+ul.list-configmenu-rd li#list-bottom-select{
+  background:#F75D52 url(../images/common/menu-bottom-rd.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-sp li{
+  background:#EDCA7D;
+}
+
+ul.list-configmenu-sp li.select{
+  background:#DEBA69;
+}
+
+ul.list-configmenu-sp li ul{
+  border:1px solid #DEBA69;
+}
+
+ul.list-configmenu-sp li ul li.select{
+  background:#FFF3D6;
+}
+
+ul.list-configmenu-sp li#list-top{
+  background:#EDCA7D url(../images/common/menu-top-sp.gif) center top no-repeat;
+}
+
+ul.list-configmenu-sp li#list-bottom{
+  background:#EDCA7D url(../images/common/menu-bottom-sp.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-sp li#list-top-select{
+  background:#DEBA69 url(../images/common/menu-top-sp.gif) center top no-repeat;
+}
+
+ul.list-configmenu-sp li#list-bottom-select{
+  background:#DEBA69 url(../images/common/menu-bottom-sp.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-pk li{
+  background:#FEB3B5;
+}
+
+ul.list-configmenu-pk li.select{
+  background:#F89799;
+}
+
+ul.list-configmenu-pk li ul{
+  border:1px solid #F89799;
+}
+
+ul.list-configmenu-pk li ul li.select{
+  background:#FFE7E7;
+}
+
+ul.list-configmenu-pk li#list-top{
+  background:#FEB3B5 url(../images/common/menu-top-pk.gif) center top no-repeat;
+}
+
+ul.list-configmenu-pk li#list-bottom{
+  background:#FEB3B5 url(../images/common/menu-bottom-pk.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-pk li#list-top-select{
+  background:#F89799 url(../images/common/menu-top-pk.gif) center top no-repeat;
+}
+
+ul.list-configmenu-pk li#list-bottom-select{
+  background:#F89799 url(../images/common/menu-bottom-pk.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-te li{
+  background:#C1D8B0;
+}
+
+ul.list-configmenu-te li.select{
+  background:#AFC99C;
+}
+
+ul.list-configmenu-te li ul{
+  border:1px solid #AFC99C;
+}
+
+ul.list-configmenu-te li ul li.select{
+  background:#EFFBE7;
+}
+
+ul.list-configmenu-te li#list-top{
+  background:#C1D8B0 url(../images/common/menu-top-te.gif) center top no-repeat;
+}
+
+ul.list-configmenu-te li#list-bottom{
+  background:#C1D8B0 url(../images/common/menu-bottom-te.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-te li#list-top-select{
+  background:#AFC99C url(../images/common/menu-top-te.gif) center top no-repeat;
+}
+
+ul.list-configmenu-te li#list-bottom-select{
+  background:#AFC99C url(../images/common/menu-bottom-te.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-lg li{
+  background:#CFCDCA;
+}
+
+ul.list-configmenu-lg li.select{
+  background:#B7B5B2;
+}
+
+ul.list-configmenu-lg li ul{
+  border:1px solid #B7B5B2;
+}
+
+ul.list-configmenu-lg li ul li.select{
+  background:#EFEFEF;
+}
+
+ul.list-configmenu-lg li#list-top{
+  background:#CFCDCA url(../images/common/menu-top-lg.gif) center top no-repeat;
+}
+
+ul.list-configmenu-lg li#list-bottom{
+  background:#CFCDCA url(../images/common/menu-bottom-lg.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-lg li#list-top-select{
+  background:#B7B5B2 url(../images/common/menu-top-lg.gif) center top no-repeat;
+}
+
+ul.list-configmenu-lg li#list-bottom-select{
+  background:#B7B5B2 url(../images/common/menu-bottom-lg.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-lb li{
+  background:#ABCAFF;
+}
+
+ul.list-configmenu-lb li.select{
+  background:#97B9F3;
+}
+
+ul.list-configmenu-lb li ul{
+  border:1px solid #97B9F3;
+}
+
+ul.list-configmenu-lb li ul li.select{
+  background:#E7FBFF;
+}
+
+ul.list-configmenu-lb li#list-top{
+  background:#ABCAFF url(../images/common/menu-top-lb.gif) center top no-repeat;
+}
+
+ul.list-configmenu-lb li#list-bottom{
+  background:#ABCAFF url(../images/common/menu-bottom-lb.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-lb li#list-top-select{
+  background:#97B9F3 url(../images/common/menu-top-lb.gif) center top no-repeat;
+}
+
+ul.list-configmenu-lb li#list-bottom-select{
+  background:#97B9F3 url(../images/common/menu-bottom-lb.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-wh li{
+  background:#CFCECE;
+}
+
+ul.list-configmenu-wh li.select{
+  background:#BEBEBE;
+}
+
+ul.list-configmenu-wh li ul{
+  border:1px solid #BEBEBE;
+}
+
+ul.list-configmenu-wh li ul li.select{
+  background:#EFEFEF;
+}
+
+ul.list-configmenu-wh li#list-top{
+  background:#CFCECE url(../images/common/menu-top-wh.gif) center top no-repeat;
+}
+
+ul.list-configmenu-wh li#list-bottom{
+  background:#CFCECE url(../images/common/menu-bottom-wh.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-wh li#list-top-select{
+  background:#BEBEBE url(../images/common/menu-top-wh.gif) center top no-repeat;
+}
+
+ul.list-configmenu-wh li#list-bottom-select{
+  background:#BEBEBE url(../images/common/menu-bottom-wh.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-or li{
+  background:#FFB86E;
+}
+
+ul.list-configmenu-or li.select{
+  background:#FF9F3B;
+}
+
+ul.list-configmenu-or li ul{
+  border:1px solid #FF9F3B;
+}
+
+ul.list-configmenu-or li ul li.select{
+  background:#FFFBDE;
+}
+
+ul.list-configmenu-or li#list-top{
+  background:#FFB86E url(../images/common/menu-top-or.gif) center top no-repeat;
+}
+
+ul.list-configmenu-or li#list-bottom{
+  background:#FFB86E url(../images/common/menu-bottom-or.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-or li#list-top-select{
+  background:#FF9F3B url(../images/common/menu-top-or.gif) center top no-repeat;
+}
+
+ul.list-configmenu-or li#list-bottom-select{
+  background:#FF9F3B url(../images/common/menu-bottom-or.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-li li{
+  background:#73F6B9;
+}
+
+ul.list-configmenu-li li.select{
+  background:#4DE19C;
+}
+
+ul.list-configmenu-li li ul{
+  border:1px solid #4DE19C;
+}
+
+ul.list-configmenu-li li ul li.select{
+  background:#E7FFF7;
+}
+
+ul.list-configmenu-li li#list-top{
+  background:#73F6B9 url(../images/common/menu-top-li.gif) center top no-repeat;
+}
+
+ul.list-configmenu-li li#list-bottom{
+  background:#73F6B9 url(../images/common/menu-bottom-li.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-li li#list-top-select{
+  background:#4DE19C url(../images/common/menu-top-li.gif) center top no-repeat;
+}
+
+ul.list-configmenu-li li#list-bottom-select{
+  background:#4DE19C url(../images/common/menu-bottom-li.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-li li{
+  background:#73F6B9;
+}
+
+ul.list-configmenu-li li.select{
+  background:#4DE19C;
+}
+
+ul.list-configmenu-li li ul{
+  border:1px solid #4DE19C;
+}
+
+ul.list-configmenu-li li ul li.select{
+  background:#E7FFF7;
+}
+
+ul.list-configmenu-li li#list-top{
+  background:#73F6B9 url(../images/common/menu-top-li.gif) center top no-repeat;
+}
+
+ul.list-configmenu-li li#list-bottom{
+  background:#73F6B9 url(../images/common/menu-bottom-li.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-li li#list-top-select{
+  background:#4DE19C url(../images/common/menu-top-li.gif) center top no-repeat;
+}
+
+ul.list-configmenu-li li#list-bottom-select{
+  background:#4DE19C url(../images/common/menu-bottom-li.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-bl li{
+  background:#A1A0A1;
+}
+
+ul.list-configmenu-bl li.select{
+  background:#868386;
+}
+
+ul.list-configmenu-bl li ul{
+  border:1px solid #868386;
+}
+
+ul.list-configmenu-bl li ul li.select{
+  background:#E7E7E7;
+}
+
+ul.list-configmenu-bl li#list-top{
+  background:#A1A0A1 url(../images/common/menu-top-bl.gif) center top no-repeat;
+}
+
+ul.list-configmenu-bl li#list-bottom{
+  background:#A1A0A1 url(../images/common/menu-bottom-bl.gif) center bottom no-repeat;
+}
+
+ul.list-configmenu-bl li#list-top-select{
+  background:#868386 url(../images/common/menu-top-bl.gif) center top no-repeat;
+}
+
+ul.list-configmenu-bl li#list-bottom-select{
+  background:#868386 url(../images/common/menu-bottom-bl.gif) center bottom no-repeat;
+}

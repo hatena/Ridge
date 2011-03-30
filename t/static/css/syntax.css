@@ -1,0 +1,230 @@
+/* =========================
+
+nAuthor: Hatena
+Access:	info@hatena.ne.jp
+Comment: 記法成型用CSS
+Filename: syntax.css
+Update: 2006/10/24
+Index:
+
+========================= */
+
+div.section{
+  margin-top:0.6em;
+  margin-bottom:1.5em;
+}
+
+div.section p{
+  line-height:165%;
+  margin:0 0 0.5em 0.4em;
+  text-indent: 0.8em;
+}
+
+div.section p span.footnote{
+  font-size:90%;
+  margin:0 0.3em;
+}
+
+div.section h2{
+  background:transparent;
+  margin:1em 0 0.5em 0;
+  color:#000;
+  font-size:110%;
+}
+
+div.section h2 a{
+  color:#000;
+}
+
+div.section h3{
+  margin:0.5em 0 1em 0;
+  font-size: 110%;
+  line-height: 150%;
+}
+
+div.section h3 span.sanchor{
+  color:#5279E7;
+  margin-right:5px;
+}
+
+div.section h4{
+  border-bottom:1px solid #5279E7;
+  border-left:5px solid #5279E7;
+  margin:1.5em 0 1em 0;
+  padding:3px 5px;
+}
+
+div.section h5{
+  font-size:100%;
+  margin:0 0 0.5em 0;
+  padding:0;
+}
+
+div.section  ul li , div.section  ol li {
+  line-height:150%;
+  padding:2px 0;
+}
+
+div.section table{
+
+  border:1px solid #B1B1C7;
+  margin:1em 0 1em 0;
+}
+
+div.section table th{
+  line-height:150%;
+  background:#E0E9FA;
+  padding:3px;
+}
+
+div.section table td{
+  line-height:150%;
+  padding:3px;
+}
+
+div.section table.plaintable{
+  border:0;
+}
+
+div.section table.plaintable th{
+  background:#FFF;
+  padding:0;
+}
+
+div.section table.plaintable td{
+  background:#FFF;
+  padding:0;
+}
+
+div.section hr{
+  margin-right:1em;
+  margin-left:1em;
+}
+div.section .hatena-asin-detail{
+  margin:1em 0 1em 0;
+}
+div.section .hatena-asin-detail-info{
+  width:auto;
+  float:left;
+  margin:5px 0;
+}
+
+div.section .hatena-asin-detail-info .hatena-asin-detail-title{
+  font-weight:bold;
+  margin:0 0 5px 10px;
+  text-indent:0;
+
+}
+
+div.section .hatena-asin-detail-image{
+  float:left;
+  margin:5px 0;
+}
+
+div.section .hatena-asin-detail-info ul{
+  font-size:90%;
+  list-style:none;
+  margin:0 0 0 10px;
+  padding:0;
+}
+
+div.section .hatena-asin-detail-info ul li{
+}
+
+div.section .hatena-asin-detail-foot{
+  clear:left;
+  font-size:1px;
+  height:1px;
+}
+
+div.section pre{
+  font-size:80%;
+  background:#E0E9FA;
+  margin:1em 5px;
+  padding:10px;
+  white-space : -moz-pre-wrap ;
+  white-space : -pre-wrap ;
+  white-space : -o-pre-wrap ;
+  white-space : pre-wrap ;
+  word-break  : break-all ;
+  word-wrap   : break-word ;
+}
+
+div.section blockquote {
+  font-size:90%;
+  color: #333333;
+  background: #FFFFFF;
+  border:1px solid #5279E7;
+  margin:1em 5px 1em 5px;
+  padding:10px;
+}
+
+div.section blockquote p{
+  margin:0;
+  padding:0;
+  text-indent: 0em !important;
+}
+
+div.section dl{
+  margin:1em;
+}
+
+div.section dl dt{
+  font-weight:bold;
+}
+
+div.section dl dd{
+  margin-bottom:0.5em;
+}
+
+div.section img.photo {
+  float: right;
+  margin: 10px;
+  border: 0;
+}
+
+.hatena-question-detail{
+ width:100%;
+ text-align:left;
+ font-size:90%;
+}
+
+th.hatena-question-detail-title{
+ padding:5px;
+ font-weight:normal;
+}
+
+.hatena-question-detail-label{
+ width:30%;
+ padding:5px;
+}
+
+.hatena-question-detail-value{
+ width:65%;
+ padding:5px;
+}
+
+
+/* ここからDiaryのbase.cssの中身 */
+
+div.section img.hatena-id-icon{
+  vertical-align:middle;
+  margin-right:2px;
+}
+
+div.section img.hatena-id-image{
+}
+
+div.section a.screenshot img{
+  border:1px solid #999;
+}
+
+/* footnote これは.section内にはない */
+
+div.footnote{ 
+  font-size:80%;
+  margin:1em 0;
+}
+
+div.footnote p{ 
+}

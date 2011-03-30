@@ -1,0 +1,170 @@
+@charset "euc-jp";
+
+/*
+Author: Hatena
+Access: http://www.hatena.ne.jp/
+	info@hatena.ne.jp
+Comment:Hatena stylesheet -base-
+*/
+/*==全体==*/
+
+body{
+margin:0px;
+padding:0px;
+text-align:center;
+font-size:90%;
+background:#FFF;
+}
+
+img{
+border:none;
+}
+
+form{
+margin:0px;
+padding:0px;
+display:inline;
+}
+
+/*==ヘッダー==*/
+table#headtable{
+width:95%;
+margin:0 auto;
+}
+
+
+table#headtable td{
+  white-space:nowrap;
+  vertical-align:bottom;
+}
+
+div#logo{
+  margin-bottom:3px;
+  margin-left:1px;
+}
+
+
+ul#feature{
+margin:0;
+padding:0;
+float:right;
+width:385px;
+}
+
+ul#feature li{
+display:inline;
+}
+
+ul#feature a{
+}
+
+/*
+ul#feature a.feature01{
+background:url(/images/top/headbutton_idea.gif);
+}
+
+ul#feature a.feature02{
+background:url(/images/top/headbutton_counter.gif);
+}
+
+ul#feature a.feature03{
+background:url(/images/top/headbutton_rss.gif);
+}
+
+ul#feature a.feature04{
+background:url(/images/top/headbutton_map.gif);
+}
+
+ul#feature a.feature05{
+background:url(/images/top/headbutton_ring.gif);
+}
+*/
+
+h1{
+text-align:left;
+margin:0px;
+padding:0px;
+}
+
+h1 img{
+}
+
+/*==ユーザーメニュー==*/
+
+div#bannersub {
+text-align:center;
+clear:both;
+}
+
+div#bannersub table{
+border-top: 1px solid #5279E7;
+border-bottom: 1px solid #5279E7;
+}
+
+div#bannersub td {
+font-size: 80%;
+padding:2px;
+background:#5279E7;
+color:white;
+}
+
+div#bannersub td a{
+color:#FFF;
+}
+
+div#bannersub td.gmenu{
+text-align:center;
+padding:0px 10px;
+}
+
+div#bannersub table {
+width: 100%;
+margin:auto;
+}
+
+span.point{
+color:#FFFFCC;
+}
+
+span.point img{
+vertical-align:middle;
+margin-left:3px;
+}
+
+/*==コンテンツ==*/
+
+#container{
+margin:0px auto;
+width:92%;
+position:relative;
+}
+
+/*==フッターメニュー==*/
+
+#footer{
+font-size:90%;
+margin:10px 0px;
+text-align:center;
+padding-top:10px;
+border-top:1px solid #DDD;
+clear:both;
+}
+
+#footer ul{
+margin:0px;
+padding:0px;
+list-style:none;
+}
+
+#footer ul li{
+display:inline;
+}
+
+/*==コピーライト==*/
+
+#copyright{
+padding:10px;
+text-align:center;
+color:#999;
+font-size:90%;
+}

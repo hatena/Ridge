@@ -1,0 +1,8 @@
+msgid "hello.world"
+msgstr "Hello! World!"
+
+msgid "Welcome %1"
+msgstr "Welcome %1!"
+
+msgid "%quant(%1,file) found"
+msgstr "%quant(%1,file was,files were) found!"

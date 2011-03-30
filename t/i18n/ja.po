@@ -1,0 +1,8 @@
+msgid "hello.world"
+msgstr "こんにちは、世界"
+
+msgid "Welcome %1"
+msgstr "ようこそ、%1さん"
+
+msgid "%quant(%1,file) found"
+msgstr "%1個のファイルが見つかりました"

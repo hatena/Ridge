@@ -1,0 +1,27 @@
+root: $FindBin::Bin
+
+plugins:
+  - Hello
+  - Cat
+  - Debug
+  - XFramework
+
+static_path:
+  - ^/images
+  - ^/js
+  - ^/css
+
+Plugin::Hello:
+  message: World
+  counter: 0
+
+cookie_domain: '.hatena.ne.jp'
+
+app_config:
+  default:
+    uri: http://sandbox.hatena.com/
+    dsn: dbi:mysql:sandbox;host=127.0.0.1
+
+  devel:
+    uri: http://dev.sandbox.hatena.com/
+    dsn: dbi:mysql:sandbox_devel;host=127.0.0.1

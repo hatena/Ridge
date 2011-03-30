@@ -1,0 +1,493 @@
+/* =========================
+
+Author: Hatena
+Access:	info@hatena.ne.jp
+Comment: 補助デザイン用CSS
+Filename: support.css
+Update: 2006/10/23
+Index:
+
+-BOX
+-LIST
+-TABLE
+-INDENT
+-IMG
+-ANCHOR
+-FONT
+-OTHER
+
+========================= */
+
+/* =========== BOX =========== */
+
+.box-2-1,.box-2-2{
+ float:left;
+ width:49%;
+}
+
+.box-3-1,.box-3-2,.box-3-3{
+ float:left;
+ width:33%;
+}
+
+.box-l{
+  text-align:left;
+  padding:5px;
+}
+
+.box-r{
+  text-align:right;
+  padding:5px;
+}
+
+.box-c{
+  text-align:center;
+  padding:5px;
+}
+
+.box-line-de{
+  border:1px solid #5279E7;
+  padding:5px;
+}
+
+.box-line-bl{
+  border:1px solid #000000;
+  padding:5px;
+}
+
+.box-line-br{
+  border:1px solid #9C5D31;
+  padding:5px;
+}
+
+.box-line-dg{
+  border:1px solid #6B6D7B;
+  padding:5px;
+}
+
+.box-line-gr{
+  border:1px solid #4296A5;
+  padding:5px;
+}
+
+.box-line-lb{
+  border:1px solid #8CB6FF;
+  padding:5px;
+}
+
+.box-line-lg{
+  border:1px solid #BDBAB5;
+  padding:5px;
+}
+
+.box-line-li{
+  border:1px solid #5AE7A5;
+  padding:5px;
+}
+
+.box-line-or{
+  border:1px solid #FF9629;
+  padding:5px;
+}
+
+.box-line-pk{
+  border:1px solid #EF8284;
+  padding:5px;
+}
+
+.box-line-pr{
+  border:1px solid #6B3CA5;
+  padding:5px;
+}
+
+.box-line-rd{
+  border:1px solid #CE2418;
+  padding:5px;
+}
+
+.box-line-sp{
+  border:1px solid #DEBA6B;
+  padding:5px;
+}
+
+.box-line-te{
+  border:1px solid #B5CBA5;
+  padding:5px;
+}
+
+.box-line-wh{
+  border:1px solid #FFFFFF;
+  padding:5px;
+}
+
+.box-bg-de{
+  color:#FFFFFF;
+  background:#5279E7;
+  padding:5px;
+}
+
+.box-bg-bl{
+  color:#FFFFFF;
+  background:#000000;
+  padding:5px;
+}
+
+.box-bg-br{
+  color:#FFFFFF;
+  background:#9C5D31;
+  padding:5px;
+}
+
+.box-bg-dg{
+  color:#FFFFFF;
+  background:#6B6D7B;
+  padding:5px;
+}
+
+.box-bg-gr{
+  color:#FFFFFF;
+  background:#4296A5;
+  padding:5px;
+}
+
+.box-bg-lb{
+  color:#FFFFFF;
+  background:#8CB6FF;
+  padding:5px;
+}
+
+.box-bg-lg{
+  color:#FFFFFF;
+  background:#BDBAB5;
+  padding:5px;
+}
+
+.box-bg-li{
+  color:#FFFFFF;
+  background:#5AE7A5;
+  padding:5px;
+}
+
+.box-bg-or{
+  color:#FFFFFF;
+  background:#FF9629;
+  padding:5px;
+}
+
+.box-bg-pk{
+  color:#FFFFFF;
+  background:#EF8284;
+  padding:5px;
+}
+
+.box-bg-pr{
+  color:#FFFFFF;
+  background:#6B3CA5;
+  padding:5px;
+}
+
+.box-bg-rd{
+  color:#FFFFFF;
+  background:#CE2418;
+  padding:5px;
+}
+
+.box-bg-sp{
+  color:#FFFFFF;
+  background:#DEBA6B;
+  padding:5px;
+}
+
+.box-bg-te{
+  color:#FFFFFF;
+  background:#B5CBA5;
+  padding:5px;
+}
+
+.box-bg-wh{
+  background:#FFFFFF;
+  padding:5px;
+}
+
+.box-bg-de2{
+  background:#E0E9FA;
+  padding:5px;
+}
+
+.box-bg-bl2{
+  background:#E7E7E7;
+  padding:5px;
+}
+
+.box-bg-br2{
+  background:#FFEFDE;
+  padding:5px;
+}
+
+.box-bg-dg2{
+  background:#EAEAEA;
+  padding:5px;
+}
+
+.box-bg-gr2{
+  background:#E5F9E5;
+  padding:5px;
+}
+
+.box-bg-lb2{
+  background:#E3FAFA;
+  padding:5px;
+}
+
+.box-bg-lg2{
+  background:#EFEFEF;
+  padding:5px;
+}
+
+.box-bg-li2{
+  background:#E7FFF7;
+  padding:5px;
+}
+
+.box-bg-or2{
+  background:#FFFBDE;
+  padding:5px;
+}
+
+.box-bg-pk2{
+  background:#FFE7E7;
+  padding:5px;
+}
+
+.box-bg-pr2{
+  background:#FFE7F7;
+  padding:5px;
+}
+
+.box-bg-rd2{
+  background:#FFEBEF;
+  padding:5px;
+}
+
+.box-bg-sp2{
+  background:#FFF3D6;
+  padding:5px;
+}
+
+.box-bg-te2{
+  background:#EFFBE7;
+  padding:5px;
+}
+
+.box-bg-wh2{
+  background:#FFFFFF;
+  padding:5px;
+}
+
+.box-clear{
+  _height:1%;
+}
+
+.box-clear:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.attention{
+  color:#DD3333;
+}
+
+.note{
+  font-size:90%;
+  color:#666;
+}
+
+/* =========== LIST =========== */
+
+ul.list-plain , ol.list-plain {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul.list-inline , ol.list-inline {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul.list-inline li, ol.list-inline li{
+  display:inline;
+  margin:0 5px 0 0;
+  padding:0;
+}
+
+dl.dl-plain{
+  margin:0;
+  padding:0;
+}
+
+dl.dl-plain dt , dl.dl-plain dd{
+  margin:0;
+  padding:0;
+}
+
+dl.dl-inline{
+  margin:0;
+  padding:0;
+}
+
+dl.dl-inline dt{
+  clear:left;
+  float:left;
+  width:5em;/* 適宜変更 */
+  margin-bottom:3px;
+}
+
+dl.dl-inline dd{
+  margin-left:5em;/* 適宜変更 */
+  margin-bottom:3px;
+}
+
+/* =========== TABLE =========== */
+
+td.left , th.left{
+  text-align:left;
+}
+
+td.center , th.center{
+  text-align:center;
+}
+
+td.right , th.right{
+  text-align:right;
+}
+
+td.top , th.top{
+  vertical-align:top;
+}
+
+td.middle , th.middle{
+  vertical-align:middle;
+}
+
+td.bottom , th.bottom{
+  vertical-align:bottom;
+}
+
+td.nowrap , th.nowrap{
+  white-space:nowrap;
+}
+/* =========== INDENT =========== */
+
+.indent{
+  text-indent:1em;
+}
+
+.indent-minus{
+  text-indent:-1em;
+  margin-left:1em;
+}
+
+/* =========== IMG =========== */
+
+.img-l{
+  float:left;
+  margin:5px;
+}
+
+.img-r{
+  float:right;
+  margin:5px;
+}
+
+.yea{
+  border-top:1px solid #CCC;
+  border-bottom:1px solid #CCC;
+  border-left:1px solid #CCC;
+}
+
+.nay{
+  border-top:1px solid #CCC;
+  border-right:1px solid #CCC;
+  border-bottom:1px solid #CCC;
+}
+
+.icon{
+  vertical-align:middle;
+  margin:0 2px 2px 2px;
+}
+
+/* =========== ANCHOR =========== */
+
+.keyword{
+  color:#000;
+  text-decoration:none;
+  border-bottom:1px solid #D0D0D0;
+}
+
+.okeyword{
+  color:#000;
+  text-decoration:none;
+  border-bottom:1px dashed #D0D0D0;
+}
+
+.domain{
+  color:#999999;
+}
+
+.tag{
+  color:#009900;
+  text-decoration:none;
+}
+
+.nodecoration{
+  text-decoration:none;
+}
+
+/* =========== FONT =========== */
+
+.font-s{
+  font-size:90%;
+}
+.font-ss{
+  font-size:80%;
+}
+.font-l{
+  font-size:110%;
+}
+.font-ll{
+  font-size:120%;
+}
+
+/* =========== OTHER =========== */
+
+.clear{
+  clear:both;
+}
+
+.bold{
+  font-weight:bold;
+}
+
+.block{
+  display:block;
+}
+
+.inline{
+  display:inline;
+}
+
+input.field , textarea.field {
+  border:1px solid #5279E7;
+}
+
+input.variable , textarea.variable , div.variable{
+  width:100%;
+}
+
+.peekaboo{
+  position:relative;
+  line-height:inherit;
+}
