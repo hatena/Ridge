@@ -4,7 +4,7 @@ use warnings;
 use FindBin::libs;
 
 use Ridge::Test::Internal 'Sandbox';
-use Test::More tests => 10;
+use Test::More tests => 16;
 
 GET '/' => sub {
     is $_->res->code, 200;
@@ -16,8 +16,20 @@ GET '/hoge.get_denied' => sub {
 POST '/hoge.get_denied' => sub {
     is $_->res->code, 404;
 };
+GET '/hoge.follow_method' => sub {
+    is $_->res->code, 200;
+    is $_->res->content, '/hoge.follow_method';
+};
+HEAD '/hoge.follow_method' => sub {
+    is $_->res->code, 200;
+    is $_->res->content, '';
+};
+GET '/hoge.no_content' => sub {
+    is $_->res->code, 204;
+    is $_->res->content, '';
+};
 GET '/', X_Ridge_Test => 'Internal' => sub {
-    is $_->req->get_header('X-Ridge-Test'), 'Internal';
+    is $_->req->header('X-Ridge-Test'), 'Internal';
 };
 TODO: {
     todo_skip 'アプリケーション内の die() はどうしたものか', 1;

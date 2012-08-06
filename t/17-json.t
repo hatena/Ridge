@@ -24,6 +24,7 @@ is $data->{hello}, encode('JavaScript-UCS', '世界');
 $res = get('/index.json?callback=hello');
 is $res->code, 200;
 like $res->content, qr/^hello\(.*?\);$/;
+is_deeply( [$res->content_type ], [ 'text/javascript', 'charset=utf-8' ]);
 
 $res = get('/index.js_test.json');
 is $res->code, 200;

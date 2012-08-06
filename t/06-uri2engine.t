@@ -1,15 +1,20 @@
 #!perl
 use strict;
 use warnings;
-use Test::Base;
 
 use Ridge::URI;
 use Ridge::Config;
 # use Ridge::Engine::Factory;
 
+package MyTestSuite::Filter;
+use Test::Base::Filter -Base;
+
 sub factory {
     Ridge::URI->new($_[0])->to_flow->to_engine('Sandbox'),
 }
+
+package MyTestSuite;
+use Test::Base -Base;
 
 __END__
 === 

@@ -41,6 +41,7 @@ sub is_pc {
             not $self->is_android and
             not $self->is_ipad and
             not $self->is_dsi and
+            not $self->is_3ds and
             not $self->is_wii);
 }
 
@@ -48,6 +49,11 @@ sub is_pc {
 sub is_dsi {
     my $self = shift;
     return index($self->user_agent, 'Nintendo DSi') != -1;
+}
+
+sub is_3ds {
+    my $self = shift;
+    return index($self->user_agent, 'Nintendo 3DS') != -1;
 }
 
 sub is_wii {
@@ -76,11 +82,17 @@ sub is_smartphone {
     return ($self->is_iphone or $self->is_android);
 }
 
+sub is_hatena_star {
+    my $self = shift;
+    return index($self->user_agent, 'Hatena Star UserAgent') != -1;
+}
+
 # タッチ系デバイス (use_touch_version とは違うよ!)
 sub is_touch_device {
     my $self = shift;
     return ($self->is_smartphone or
             $self->is_dsi or
+            $self->is_3ds or
             $self->is_ipad);
 }
 
@@ -92,7 +104,7 @@ sub is_tv_device {
 # Don't support Flash by nature
 sub no_flash {
     my $self = shift;
-    return $self->is_iphone || $self->is_dsi || $self->is_ipad;
+    return $self->is_iphone || $self->is_dsi || $self->is_3ds || $self->is_ipad;
 }
 
 # Has native support of canvas
@@ -107,14 +119,14 @@ sub has_canvas {
 # プなど)
 sub use_mobile_version {
     my $self = shift;
-    return ($self->is_mobile or $self->is_smartphone or $self->is_dsi);
+    return ($self->is_mobile or $self->is_smartphone or $self->is_dsi or $self->is_3ds);
 }
 
 # スマートフォン版をデフォルトとするべき (はてなココ、はてなブックマー
 # クなど)
 sub use_touch_version {
     my $self = shift;
-    return ($self->is_smartphone or $self->is_dsi);
+    return ($self->is_smartphone or $self->is_dsi or $self->is_3ds);
 }
 
 sub AUTOLOAD {

@@ -4,10 +4,8 @@ use warnings;
 use base qw/Plack::Response/;
 
 use Carp qw/croak/;
-use UNIVERSAL::require;
 use HTTP::Status ();
-use HTTP::Message;
-use Encode;
+use URI;
 use Ridge::Cookie;
 
 sub new {
@@ -38,9 +36,12 @@ sub cookies {
 }
 
 sub _finalize_cookies {
-    my $self = shift;
+    my ($self, $headers) = @_;
     for my $cookie (@{ $self->{_cookies} }) {
-        $self->headers->push_header( 'Set-Cookie' => $cookie->bake );
+        # Plack 0.9983 移行で引数の $headers に push_header するようになったのに追従
+        my $baked = $cookie->bake;
+        $headers->push_header( 'Set-Cookie' => $baked ) if $headers;
+        $self->headers->push_header( 'Set-Cookie' => $baked );
     }
 }
 
@@ -74,7 +75,10 @@ sub redirect {
     if ($to !~ /^(\/|https?:)/) {
         croak "redirect uri must be http(s)";
     }
-    $self->SUPER::redirect($to, $code || 302);
+
+    # Escape characters that are invalid as URI.
+    my $to_uri = URI->new($to);
+    $self->SUPER::redirect($to_uri->as_string, $code || 302);
     return; # for using with some functions.
 }
 
@@ -122,11 +126,10 @@ sub content_type {
     if (@_) {
         my $type = shift;
         $self->SUPER::content_type($type);
-        $self->header('Content-Type');
     } else {
         $self->SUPER::content_type;
-        $self->header('Content-Type');
     }
+    $self->header('Content-Type') || '';
 }
 
 

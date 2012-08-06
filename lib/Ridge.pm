@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use base qw/Ridge::Object/;
 
-our $VERSION = 0.10;
+our $VERSION = 0.11_01;
 
 use Carp;
 use CLASS;
@@ -49,6 +49,9 @@ CLASS->logger(Log::Dispatch->new);
 
 CLASS->load_components(qw/Autocall::InjectMethod DisableDynamicPlugin/);
 
+# Currently Ridge only supports Plack backend
+our $BACKEND = 'Plack';
+
 sub new {
     my $class = shift;
     my $self = $class->SUPER::new(@_);
@@ -69,7 +72,9 @@ sub process {
 
 sub test_process {
     my $class = shift;
-    return $class->_process(@_);
+    my $self = $class->_process(@_);
+    $self->res->finalize;
+    return $self;
 }
 
 sub _process {
@@ -134,6 +139,10 @@ sub _process {
     }
 
     $self->finalize_header;
+
+    if ($self->req->request_method eq 'HEAD') {
+        $self->res->content('');
+    }
 
     my $second = Time::HiRes::tv_interval($bm_time);
     if (!$ENV{RIDGE_ENV} or $ENV{RIDGE_ENV} ne 'production') {
@@ -246,14 +255,22 @@ sub setup_plugins {
 
 sub make_request {
     my ($class, $env) = @_;
-    my $req = Ridge::Request->new($env);
+    no strict 'refs';
+    my $klass = "$class\::";
+    my $req = (exists $$klass{"Request::"} || ($klass."Request")->require) && ($klass."Request")->isa('Ridge::Request')
+        ? ($klass."Request")->new($env) : Ridge::Request->new($env);
     $req->charset($class->config->param('charset'));
     $req;
 }
 
 sub make_response {
     my $class = shift;
-    my $res = Ridge::Response->new;
+    no strict 'refs';
+    my $klass = "$class\::";
+    my $res = (exists $$klass{"Response::"} || ($klass."Response")->require) && ($klass."Response")->isa('Ridge::Response')
+        ? ($klass."Response")->new : Ridge::Response->new;
+    $res->content('');
+    $res;
 }
 
 sub dispatch_to_action {
@@ -268,7 +285,10 @@ sub forward_to_view {
     my $self = shift;
     my $res = $self->res;
 
-    if (not $res->is_redirect and !$res->content) {
+    if (!$res->is_redirect &&
+        ($res->code || 0) != RC_NO_CONTENT &&
+        $res->content eq '')
+    {
         my $e;
         eval {
             my $impl = $self->view->impl(
@@ -282,9 +302,10 @@ sub forward_to_view {
             }
 
             my $tmplate_name = $impl->use_template ? $self->view->filename || find_template({
-                        flow => $self->flow,
-                        root => $self->config->param('root')
-            })->stringify : '';
+                flow   => $self->flow,
+                root   => $self->config->param('root'),
+                prefix => $self->template_prefix,
+            }) : '';
 
             my @msg = ('View -> ' . ref $impl);
             push @msg, sprintf '[%s]', $tmplate_name if $tmplate_name;
@@ -425,6 +446,8 @@ sub goto_view {
     $self->goto_view_flag(1);
     return;
 }
+
+sub template_prefix { undef }
 
 1;
 

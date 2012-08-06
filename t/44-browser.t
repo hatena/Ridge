@@ -17,6 +17,7 @@ sub ng ($;$) { ok !$_[0], $_[1] }
 
 {
     my $b = test::Browser->new(user_agent => 'DoCoMo/1.0/N503i/c10');
+    ng $b->is_3ds;
     ng $b->is_pc;
     ng $b->has_canvas;
     ng $b->is_smartphone;
@@ -26,10 +27,12 @@ sub ng ($;$) { ok !$_[0], $_[1] }
     ng $b->is_ipad;
     ng $b->is_touch_device;
     ng $b->is_tv_device;
+    ng $b->is_hatena_star;
 }
 
 {
     my $b = test::Browser->new(user_agent => '');
+    ng $b->is_3ds;
     ok !$b->is_dsi;
     
     $b = test::Browser->new(user_agent => 'Opera (Nintendo DSi)');
@@ -45,10 +48,32 @@ sub ng ($;$) { ok !$_[0], $_[1] }
     ok $b->is_touch_device;
     ng $b->is_tv_device;
     ok $b->no_flash;
+    ng $b->is_hatena_star;
+}
+
+{
+    my $b = test::Browser->new(user_agent => '');
+    ok !$b->is_dsi;
+    
+    $b = test::Browser->new(user_agent => 'Mozilla (Nintendo 3DS)');
+    ok $b->is_3ds;
+    ng $b->is_dsi;
+
+    ng $b->is_pc;
+    ok $b->has_canvas;
+    ng $b->is_smartphone;
+    ok $b->use_mobile_version;
+    ok $b->use_touch_version;
+    ng $b->is_wii;
+    ng $b->is_ipad;
+    ok $b->is_touch_device;
+    ng $b->is_tv_device;
+    ok $b->no_flash;
 }
 
 {
     my $b = test::Browser->new(user_agent => 'Opera (Nintendo Wii)');
+    ng $b->is_3ds;
     ng $b->is_dsi;
     ng $b->is_pc;
     ok $b->has_canvas;
@@ -60,6 +85,7 @@ sub ng ($;$) { ok !$_[0], $_[1] }
     ng $b->is_touch_device;
     ok $b->is_tv_device;
     ng $b->no_flash;
+    ng $b->is_hatena_star;
 }
 
 {
@@ -97,6 +123,7 @@ sub ng ($;$) { ok !$_[0], $_[1] }
     ok $b->is_touch_device;
     ng $b->is_tv_device;
     ok $b->no_flash;
+    ng $b->is_hatena_star;
 }
 
 {
@@ -116,6 +143,7 @@ sub ng ($;$) { ok !$_[0], $_[1] }
     ok $b->is_touch_device;
     ng $b->is_tv_device;
     ok $b->no_flash;
+    ng $b->is_hatena_star;
 }
 
 {
@@ -147,5 +175,18 @@ sub ng ($;$) { ok !$_[0], $_[1] }
     ng $b->is_ipad;
     ok $b->is_touch_device;
     ng $b->is_tv_device;
+    ng $b->is_hatena_star;
 }
 
+{
+    my $b = test::Browser->new(user_agent => 'Hatena Star UserAgent');
+    ok $b->is_pc;
+    ok $b->has_canvas;
+    ng $b->is_smartphone;
+    ng $b->use_touch_version;
+    ng $b->is_wii;
+    ng $b->is_ipad;
+    ng $b->is_touch_device;
+    ng $b->is_tv_device;
+    ok $b->is_hatena_star;
+}

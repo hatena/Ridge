@@ -1,5 +1,24 @@
 Revision history for Perl extension Ridge.
 
+0.11  Mon Jun 25 2012
+      - Support HTTP HEAD request method
+      - Support HTTP 204 No-Content response code
+      - Support Plack 0.9983 and later
+      - Fix content-type of JSONP
+      - Support custom subclass of Ridge::Request/Response
+      - Support per-device templates
+      - Add Ridge::Request#original_uri
+
+0.10  Mon Jun 21 2010
+
+0.05  Thu Apr 3 2008
+
+0.04  Wed Oct 10 2007
+
+0.03  Wed Oct 10 2007
+
+0.02  Wed Aug 15 2007
+
 0.01  Thu Mar 8 19:00:00 2007
       - TBD
 

@@ -70,9 +70,33 @@ sub find_template ($) {
         return $cached;
     }
 
-    my $file = find_file $flow;
-    my $found = $file->absolute(dir($args->{root}, 'templates'))->stat
-        ? $file : $file->default_template;
+    my $templates = dir($args->{root}, 'templates');
+
+    my $found = '';
+    if ($flow->device) {
+        my $file = Ridge::TemplateFile->new({
+            path_segments => [ $flow->device, @{ $flow->path_segments } ],
+            action        => $flow->action || '',
+        });
+        if ($file->absolute($templates)->stat) {
+            $found = $file->as_file;
+        } elsif ($file->default_template->absolute($templates)->stat) {
+            $found = $file->default_template;
+        }
+    }
+    if (!$found) {
+        my $file = Ridge::TemplateFile->new({
+            path_segments => $flow->path_segments,
+            action        => $flow->action || '',
+        });
+        if ($file->absolute($templates)->stat) {
+            $found = $file->as_file;
+        } elsif ($file->default_template->absolute($templates)->stat) {
+            $found = $file->default_template;
+        }
+    }
+
+    $found = "$found";
 
     $Cache{$flow->as_key} = $found;
     $found;

@@ -38,6 +38,7 @@ requires 'Log::Dispatch::Configurator::YAML';
 requires 'Template::Stash::ForceUTF8';
 requires 'Plack';
 requires 'Plack::Middleware::ReverseProxy';
+requires 'HTTP::MobileAgent';
 
 recommends 'Locale::Maketext::Simple';
 recommends 'Locale::Maketext::Lexicon';
@@ -48,6 +49,10 @@ recommends 'DateTime';
 recommends 'DateTime::Format::Mail';
 recommends 'DateTime::TimeZone';
 recommends 'List::Util';
+
+recommends 'Coro';
+recommends 'Coro::Event';
+recommends 'Coro::LWP';
 
 build_requires 'File::Spec';
 build_requires 'FindBin::libs';

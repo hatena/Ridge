@@ -4,7 +4,7 @@ use warnings;
 use base qw/Ridge::AttrHandler Ridge::Object/;
 use CLASS;
 use List::MoreUtils qw/any/;
-use UNIVERSAL;
+use Scalar::Util qw/blessed/;
 use HTTP::Status;
 
 use Ridge::Util qw/logger/;
@@ -110,7 +110,7 @@ sub _dispatch_to {
     my $res = $self->$action($r, @argv) if $continue;
     # $self->_after_filter->run($action, $r, $self) if $self->_after_filter;
 
-    (ref $res and UNIVERSAL::isa($res, 'Ridge::ActionResult'))
+    (blessed $res and $res->isa('Ridge::ActionResult'))
         ? $res
         : Ridge::ActionResult->as('default');
 }

@@ -2,12 +2,11 @@
 use strict;
 use warnings;
 
-use Test::More tests => 3;
+use Test::More tests => 4;
 
 use_ok 'Ridge';
 use_ok 'Ridge::Thing';
 use_ok 'Ridge::TemplateFile';
 
-# for my $key (keys %ENV) {
-#    warn $key, " => ", $ENV{$key}, "\n";
-#}
+no warnings 'once';
+is $Ridge::BACKEND, 'Plack';

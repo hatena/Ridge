@@ -7,8 +7,8 @@ use IP::Country::Fast;
 use DateTime::TimeZone;
 use DateTime;
 use List::Util 'first';
+use Scalar::Util qw/blessed/;
 use POSIX qw/floor ceil/;
-use UNIVERSAL;
 
 sub tz : Method {
     my ( $self, $r, $host ) = @_;
@@ -63,7 +63,7 @@ sub _guess_by_geo_ip {
         my $offset = $tz->offset_for_datetime($dt) / 3600;
         $quotient == $offset and last;
     }
-    return UNIVERSAL::isa( $tz, 'DateTime::TimeZone' ) ? $tz->name : undef;
+    return blessed $tz && $tz->isa('DateTime::TimeZone') ? $tz->name : undef;
 }
 
 sub _guess_from_country_code {

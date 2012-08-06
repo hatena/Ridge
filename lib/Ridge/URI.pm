@@ -108,6 +108,7 @@ sub to_flow {
         path_segments => $self->path_segments || [],
         action        => $self->action || '',
         view          => $self->view || '',
+        device        => $self->device || '',
     });
 }
 
@@ -118,6 +119,11 @@ sub as_uri {
 
 sub DESTROY {
     undef $ParseResults;
+}
+
+sub device {
+    my ($self) = @_;
+    $self->param('device');
 }
 
 1;

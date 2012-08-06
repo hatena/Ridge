@@ -83,6 +83,7 @@ sub cookie : Public {
     my ($self, $r) = @_;
     $r->res->cookie(-name => 'foo', -value => 'bar');
     $r->res->cookie(-name => 'aaa', -value => 'bbb', -domain => '.g.hatena.ne.jp');
+    $r->res->cookie(-name => 'date', -value => 'hyphenated', -expires => '+1y');
     $r->res->content("check baked cookies please.");
 }
 

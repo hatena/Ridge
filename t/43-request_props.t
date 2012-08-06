@@ -26,11 +26,18 @@ use Ridge::Request;
         return $self->getenv('REQUEST_METHOD');
     }
 
+    sub user_agent {
+        my ($self) = @_;
+        return $self->getenv('HTTP_USER_AGENT');
+    }
+
     *server_name = \&Ridge::Request::server_name;
     *getenv = \&Ridge::Request::getenv;
     *is_tls = \&Ridge::Request::is_tls;
     *is_idempotent = \&Ridge::Request::is_idempotent;
     *epoch_param = \&Ridge::Request::epoch_param;
+    *address = \&Ridge::Request::address;
+    *browser = \&Ridge::Request::browser;
 }
 
 {
@@ -128,4 +135,29 @@ use Ridge::Request;
     eq_or_diff [$req->epoch_param('d')], [];
     eq_or_diff [$req->epoch_param('e')], [];
     eq_or_diff [$req->epoch_param('f')], [];
+}
+
+for (
+    ['192.168.0.1,123.4.5.6' => '123.4.5.6'],
+    ['123.4.5.6,192.168.0.1' => '123.4.5.6'],
+    ['123.4.5.6,127.0.0.1' => '123.4.5.6'],
+    ['123.4.5.6,::1' => '123.4.5.6'],
+) {
+    my $req = test::Request->new(env => {HTTP_X_FORWARDED_FOR => $_->[0]});
+    is $req->address, $_->[1];
+}
+
+{
+    package test::Ridge::Browser;
+    use base qw/Ridge::Browser/;
+    $INC{'test/Ridge/Browser.pm'} = __FILE__; # hack for UNIVERSAL::require
+}
+
+{
+    my $req = test::Request->new;
+    isa_ok $req->browser, 'Ridge::Browser';
+
+    local $Ridge::Request::PREFERRED_BROWSER = 'test::Ridge::Browser';
+    $req = test::Request->new;
+    isa_ok $req->browser, 'test::Ridge::Browser';
 }

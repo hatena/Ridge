@@ -3,7 +3,7 @@ abstract: 'A light weight web application framework'
 author:
   - 'Naoya Ito, <platform@hatena.ne.jp<gt>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
   File::Spec: 0
   FindBin::libs: 0
   Net::Ping: 0
@@ -15,9 +15,10 @@ build_requires:
   Test::Singleton: 0
   Time::HiRes: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
 distribution_type: module
-generated_by: 'Module::Install version 1.00'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -28,6 +29,9 @@ no_index:
     - inc
     - t
 recommends:
+  Coro: 0
+  Coro::Event: 0
+  Coro::LWP: 0
   DateTime: 0
   DateTime::Format::Mail: 0
   DateTime::TimeZone: 0
@@ -54,6 +58,7 @@ requires:
   File::Slurp: 0
   FormValidator::Simple: 0
   HTTP::BrowserDetect: 0
+  HTTP::MobileAgent: 0
   HTTP::Request: 0
   HTTP::Request::AsCGI: 0
   HTTP::Response: 0
@@ -74,4 +79,4 @@ requires:
   URI: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.1
+version: 0.1101

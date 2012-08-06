@@ -11,6 +11,12 @@ CLASS->mk_accessors(qw/action args/);
 
 sub next_action {
     my ($self, $r, $engine) = @_;
+    if ($r->req->request_method eq 'HEAD') {
+        unless ($engine->can($self->action)) {
+            (my $action = $self->action) =~ s/head$/get/;
+            $self->action($action);
+        }
+    }
     my $e;
     my $retval = eval {
         $r->dispatch_to_action($engine, $self->action, $self->args);

@@ -34,10 +34,15 @@ sub process {
     my $json = JSON::Syck::Dump($r->stash->exposed_params->to_hash);
     from_to($json, 'utf8', 'JavaScript-UCS');
 
+    # IE用糞hack
+    $json =~ s!<!\\u003c!g;
+    $json =~ s!>!\\u003e!g;
+
     my $callback = $r->req->param($self->callback_name);
     if ($callback) {
         validate_callback_param $callback
             or Ridge::Exception->throw('Invalid callback parameter');
+        $r->res->content_type('text/javascript');
         return sprintf '%s(%s);', $callback, $json;
     } else {
         return $json;

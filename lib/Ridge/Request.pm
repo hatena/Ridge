@@ -10,13 +10,15 @@ use Encode;
 use Carp;
 $Carp::Internal{ (__PACKAGE__) }++;
 
-use Ridge::Browser;
 use Ridge::Util qw/deprecated/;
 use Ridge::Request::Upload;
 use DateTime;
+use URI;
 use URI::Escape ();
+use Hash::MultiValue;
 
 our $PREFERRED_URI = 'Ridge::URI';
+our $PREFERRED_BROWSER = 'Ridge::Browser';
 
 sub validator {
     my $self = shift;
@@ -100,7 +102,10 @@ sub raw_data {
 
 sub browser {
     my ($self) = @_;
-    $self->{_browser} ||= Ridge::Browser->new( $self->user_agent || '');
+    $self->{_browser} ||= do {
+        $Ridge::Request::PREFERRED_BROWSER->require or die $@;
+        $Ridge::Request::PREFERRED_BROWSER->new( $self->user_agent || '');
+    };
 }
 
 sub charset {
@@ -111,27 +116,29 @@ sub charset {
     $self->{charset};
 }
 
-sub uri { # copy from Plack::Request to use PREFERRED_URI
+sub uri {
     my $self = shift;
     $self->{uri} ||= do {
-        my $base = $self->_uri_base;
+        # Use $self->_uri_base to leave default port (:80 on http: or
+        # :443 on https:) as it is. This is a backward compatible way.
+        my $uri = URI->new($self->_uri_base);
+        $uri->path_query($self->env->{REQUEST_URI});
 
-        my $path_escape_class = '^A-Za-z0-9\-\._~/';
-
-        my $path = URI::Escape::uri_escape($self->env->{PATH_INFO} || '', $path_escape_class);
-        if (index($self->env->{REQUEST_URI}, "?") != -1) {
-            $path .= '?' . ($self->env->{QUERY_STRING} || '')
-        }
-
-        $base =~ s!/$!! if $path =~ m!^/!;
         $Ridge::Request::PREFERRED_URI->use or die $@;
-        $Ridge::Request::PREFERRED_URI->new($base . $path);
+        $Ridge::Request::PREFERRED_URI->new($uri);
     };
 }
 
-sub original_uri { # always return new uri object
+sub escaped_uri { # always return new uri object
     my $self = shift;
     $self->SUPER::uri;
+}
+
+sub original_uri {
+    my ($self) = @_;
+    my $uri = $self->base;
+    $uri->path_query($self->env->{REQUEST_URI});
+    return $uri;
 }
 
 sub Vars { # _deprecated
@@ -236,11 +243,22 @@ sub param {
     }
 }
 
+sub cookies {
+    my ($self) = @_;
+
+    if (!$self->env->{'plack.cookie.parsed'} && $self->env->{HTTP_COOKIE}) {
+        # Treat '+' as a space to accept cookies encoded by Apache2::Cookie.
+        $self->env->{HTTP_COOKIE} =~ s/\+/%20/g;
+    }
+
+    return $self->SUPER::cookies;
+}
+
 sub cookie {
     my ($self, $name) = @_;
     croak 'require name' unless $name;
 
-    $self->SUPER::cookies->{$name};
+    $self->cookies->{$name};
 }
 
 sub _make_upload {
@@ -274,12 +292,11 @@ sub epoch_param {
 
 sub address {
     my $self = shift;
-    if ($self->getenv('HTTP_X_FORWARDED_FOR')) {
-        my ($ip) = ($self->getenv('HTTP_X_FORWARDED_FOR') =~ /([^,\s]+)$/);
-        return $ip;
-    } else {
-        return $self->getenv('REMOTE_ADDR');
+    if (my $for = $self->getenv('HTTP_X_FORWARDED_FOR')) {
+        my @ip = grep { $_ and not /^(?:10\.|172\.(?:1[6-9]|2[0-9]|3[0-1])\.|192\.168\.|127\.)/ and $_ ne '::1' } split /\s*,\s*/, $for;
+        return $ip[-1] if @ip;
     }
+    return $self->getenv('REMOTE_ADDR');
 }
 
 1;

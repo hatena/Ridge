@@ -27,7 +27,7 @@ sub bake {
     my @cookie = ( URI::Escape::uri_escape_utf8($self->name) . "=" . URI::Escape::uri_escape_utf8($self->value) );
     push @cookie, "domain=" . $self->{domain} if $self->{domain};
     push @cookie, "path=" . $self->{path}     if $self->{path};
-    push @cookie, "expires=" . CGI::Util::expires($self->{expires}) if $self->{expires};
+    push @cookie, "expires=" . CGI::Util::expires($self->{expires}, 'cookie') if $self->{expires};
     push @cookie, "secure"                    if $self->{secure};
     push @cookie, "HttpOnly"                  if $self->{httponly};
 

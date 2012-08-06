@@ -46,6 +46,16 @@ sub host {
     $self->url->host(@_);
 }
 
+sub port {
+    my $self = shift;
+    $self->url->port(@_);
+}
+
+sub host_port {
+    my $self = shift;
+    $self->url->host_port(@_);
+}
+
 sub scheme {
     my $self = shift;
     $self->url->scheme(@_);
@@ -61,9 +71,34 @@ sub path_query {
     $self->url->path_query(@_);
 }
 
+sub query_form {
+    my $self = shift;
+    $self->url->query_form(@_);
+}
+
 sub query_param {
     my $self = shift;
     $self->url->query_param(@_);
+}
+
+sub query_param_append {
+    my $self = shift;
+    $self->url->query_param_append(@_);
+}
+
+sub query_param_delete {
+    my $self = shift;
+    $self->url->query_param_delete(@_);
+}
+
+sub query_form_hash {
+    my $self = shift;
+    $self->url->query_form_hash(@_);
+}
+
+sub query_keywords {
+    my $self = shift;
+    $self->url->query_keywords(@_);
 }
 
 sub path_segments {
@@ -141,14 +176,20 @@ sub to_flow {
         path_segments => $self->path_segments || [],
         action        => $self->action || '',
         view          => $self->view || '',
+        device        => $self->device || '',
     });
 }
 
 sub param {
     my ($self, $key, $value) = @_;
-    $value
+    (@_ > 2)
         ? $self->_params->{$key} = $value
         : $self->_params->{$key};
+}
+
+sub as_uri {
+    my $self = shift;
+    return $self->url->clone;
 }
 
 sub clone {
@@ -156,8 +197,9 @@ sub clone {
     $self->url->clone(@_);
 }
 
-sub query_form {
-    shift->url->query_form
+sub device {
+    my ($self) = @_;
+    $self->param('device');
 }
 
 1;

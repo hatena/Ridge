@@ -73,6 +73,18 @@ sub test_redirect_http : Tests {
     };
 }
 
+sub test_redirect_escape : Tests {
+    my $res = Ridge::Response->new;
+
+    $res->redirect('/\other.example.org/');
+    is $res->code, 302;
+    is $res->header('Location'), '/%5Cother.example.org/', 'a URI cannot contain backslashes';
+
+    $res->redirect_permanently('/\other.example.org/');
+    is $res->code, 301;
+    is $res->header('Location'), '/%5Cother.example.org/';
+}
+
 sub test_content_as_text : Test(2) {
     my $res = Ridge::Response->new;
     my $ret = $res->content_as_text('Hello, World');

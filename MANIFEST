@@ -1,6 +1,7 @@
 app.psgi
 bin/ridge.pl
 Changes
+config/perl/modules.txt
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
 inc/Module/Install/AutoInstall.pm
@@ -65,21 +66,14 @@ lib/Ridge/Plugin/AsyncStash.pm
 lib/Ridge/Plugin/AutoCheckRKM.pm
 lib/Ridge/Plugin/Cat.pm
 lib/Ridge/Plugin/I18N.pm
-lib/Ridge/Plugin/Mail.pm
 lib/Ridge/Plugin/TimeZone.pm
 lib/Ridge/Plugin/XFramework.pm
 lib/Ridge/Profile.pm
 lib/Ridge/Request.pm
-lib/Ridge/Request/Apache2.pm
-lib/Ridge/Request/Apache2/UploadHandle.pm
-lib/Ridge/Request/CGI.pm
-lib/Ridge/Request/FCGI.pm
-lib/Ridge/Request/Mock.pm
 lib/Ridge/Request/Upload.pm
 lib/Ridge/Response.pm
 lib/Ridge/Response/Apache2.pm
 lib/Ridge/Response/CGI.pm
-lib/Ridge/Response/Debug.pm
 lib/Ridge/Response/Mock.pm
 lib/Ridge/Stash.pm
 lib/Ridge/TemplateFile.pm
@@ -117,7 +111,6 @@ t/10-template_file.t
 t/11-cgi.t
 t/12-plugin.t
 t/13-engine-cache.t
-t/14-daemon.t
 t/15-forward.t
 t/16-test.t
 t/17-json.t
@@ -129,7 +122,6 @@ t/22-env.t
 t/23-configure.t
 t/24-cookie.t
 t/24-logger.t
-t/30-plugin_i18n.t
 t/31-engine2ps.t
 t/32-form_validation.t
 t/33-form_serialize.t
@@ -151,6 +143,8 @@ t/80-plugin_xframework.t
 t/96-error_html.t
 t/97-function.t
 t/98-filter.t
+t/99-custom-reqres.t
+t/99-device.t
 t/99-status_code.t
 t/config.yml
 t/i18n/en.po
@@ -210,6 +204,7 @@ t/templates/_message/error.html
 t/templates/config.html
 t/templates/config/design.html
 t/templates/forward.templating_goal.html
+t/templates/hoge.no_content.html
 t/templates/index.html
 t/templates/mobile.html
 t/templates/noengine.html

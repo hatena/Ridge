@@ -4,7 +4,7 @@ use warnings;
 use base qw/Ridge::Thing/;
 use CLASS;
 
-my @Fields = qw/path_segments action view/;
+my @Fields = qw/path_segments action view device/;
 CLASS->mk_accessors(@Fields);
 
 sub new_from {
@@ -13,12 +13,13 @@ sub new_from {
         path_segments => _engine2ps($args->{engine}),
         action        => $args->{action} || '',
         view          => $args->{view}   || '',
+        device        => $args->{device} || '',
     });
 }
 
 sub as_key {
     my $self = shift;
-    join '|', @{$self->path_segments || []}, $self->action, $self->view;
+    join '|', @{$self->path_segments || []}, $self->action, $self->view, $self->device;
 }
 
 sub to_engine {

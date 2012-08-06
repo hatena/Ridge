@@ -2,6 +2,7 @@ package Ridge::Exceptions;
 use strict;
 use warnings;
 use Exporter::Lite;
+use Scalar::Util qw/blessed/;
 
 use Exception::Class (
     'Ridge::Exception::TemplateError' => {
@@ -25,7 +26,7 @@ our @EXPORT = qw/throw caught rethrow/;
 sub rethrow ($) {
     my $e = shift;
     local $SIG{__DIE__};
-    UNIVERSAL::isa($e, 'Ridge::Exception') ? $e->rethrow : die $e;
+    blessed $e && $e->isa('Ridge::Exception') ? $e->rethrow : die $e;
 }
 
 sub throw {
