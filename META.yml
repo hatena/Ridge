@@ -4,16 +4,12 @@ author:
   - 'Naoya Ito, <platform@hatena.ne.jp<gt>'
 build_requires:
   ExtUtils::MakeMaker: 6.36
-  File::Spec: 0
-  FindBin::libs: 0
-  Net::Ping: 0
-  Scalar::Util: 0
+  IO::String: 0
   Test::Base: 0
   Test::Class: 0
-  Test::HTTP: 0
   Test::More: 0
+  Test::Most: 0
   Test::Singleton: 0
-  Time::HiRes: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.36
 distribution_type: module
@@ -32,51 +28,64 @@ recommends:
   Coro: 0
   Coro::Event: 0
   Coro::LWP: 0
-  DateTime: 0
   DateTime::Format::Mail: 0
-  DateTime::TimeZone: 0
   Geo::IP::PurePerl: 0
   IP::Country::Fast: 0
+  LWP::Protocol::https: 0
+  LWP::UserAgent: 0
   List::Util: 0
-  Locale::Maketext::Lexicon: 0
-  Locale::Maketext::Simple: 0
   MIME::Lite::TT::Japanese: 0
+  Plack::Middleware::Refresh: 0
+  Plack::Middleware::ServerStatus::Lite: 0
 requires:
   CGI: 0
   CLASS: 0
+  Cache::Memcached: 0
   Carp: 0
   Class::Accessor::Fast: 0
   Class::Accessor::Lvalue::Fast: 0
-  Class::Component::Plugin: 0
+  Class::Component: 0
   Class::Data::Inheritable: 0
   Class::Inspector: 0
   Class::Singleton: 0
+  Class::Trigger: 0
+  DateTime: 0
+  DateTime::TimeZone: 0
   Encode::JavaScript::UCS: 0
   Exception::Class: 0
   Exporter::Lite: 0
   File::Modified: 0
   File::Slurp: 0
+  File::Spec: 0
+  FindBin::libs: 0
   FormValidator::Simple: 0
   HTTP::BrowserDetect: 0
   HTTP::MobileAgent: 0
   HTTP::Request: 0
   HTTP::Request::AsCGI: 0
   HTTP::Response: 0
+  IO::Prompt: 0
   JSON::Syck: 0
   List::MoreUtils: 0
+  Log::Dispatch: 0
   Log::Dispatch::Config: 0
   Log::Dispatch::Configurator::YAML: 0
   Module::Pluggable: 0
-  Module::Refresh: 0
+  Params::Validate: 0
   Parse::RecDescent: 0
   Path::Class: 0
   Plack: 0
+  Plack::Middleware::Debug: 0
   Plack::Middleware::ReverseProxy: 0
   Pod::Usage: 0
+  Scalar::Util: 0
   Template: 0
+  Template::Provider::Encoding: 0
   Template::Stash::ForceUTF8: 0
+  Time::HiRes: 0
   UNIVERSAL::require: 0
   URI: 0
+  YAML::Syck: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.1101
+version: 0.1102

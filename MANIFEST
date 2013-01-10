@@ -28,7 +28,6 @@ lib/Ridge/Config.pm
 lib/Ridge/Config/App.pm
 lib/Ridge/Cookie.pm
 lib/Ridge/Daemon.pm
-lib/Ridge/Daemon/Connection.pm
 lib/Ridge/Daemon/Watcher.pm
 lib/Ridge/Daemon/Watcher/Definition.pm
 lib/Ridge/Daemon/Watcher/Definition/AdditionalPerlModule.pm
@@ -43,7 +42,6 @@ lib/Ridge/Exceptions.pm
 lib/Ridge/Flash.pm
 lib/Ridge/Flash/Cookie.pm
 lib/Ridge/Flow.pm
-lib/Ridge/Handler/Apache2.pm
 lib/Ridge/Helper.pm
 lib/Ridge/Helper/Config.pm
 lib/Ridge/Helper/ConfigLoggerYAML.pm
@@ -72,9 +70,6 @@ lib/Ridge/Profile.pm
 lib/Ridge/Request.pm
 lib/Ridge/Request/Upload.pm
 lib/Ridge/Response.pm
-lib/Ridge/Response/Apache2.pm
-lib/Ridge/Response/CGI.pm
-lib/Ridge/Response/Mock.pm
 lib/Ridge/Stash.pm
 lib/Ridge/TemplateFile.pm
 lib/Ridge/Test.pm
@@ -174,7 +169,6 @@ t/lib/Sandbox/Engine/Redirect.pm
 t/lib/Sandbox/Engine/Static.pm
 t/lib/Sandbox/Engine/User.pm
 t/lib/Sandbox/Filter/Test.pm
-t/script/server.pl
 t/static/css/base.css
 t/static/css/common.css
 t/static/css/global.css

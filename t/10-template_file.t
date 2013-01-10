@@ -17,6 +17,8 @@ sub default_template {
     Ridge::TemplateFile->new($_[0])->default_template;
 }
 
+run_is 'input' => 'expect';
+
 __END__
 ===
 --- input eval stringify

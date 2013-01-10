@@ -152,10 +152,14 @@ sub request_method {
     $self->method || 'GET';
 }
 
-sub get_header { # _deprecated
+sub get_header {
     my ($self, $key) = @_;
-    deprecated '$self->headers->header($key) or $self->headers->header_field_names;';
-    $key ? $self->headers->header($key) : $self->headers->header_field_names;
+    if (@_ >= 2) {
+        return $self->headers->header($key);
+    } else { # _deprecated
+        deprecated '$self->headers->header_field_names;';
+        return $self->headers->header_field_names;
+    }
 }
 
 sub server_port {

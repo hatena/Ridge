@@ -16,6 +16,8 @@ sub factory {
 package MyTestSuite;
 use Test::Base -Base;
 
+run_is 'input' => 'expected';
+
 __END__
 === 
 --- input factory: http://d.hatena.ne.jp

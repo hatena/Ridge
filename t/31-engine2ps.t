@@ -8,6 +8,8 @@ sub e2ps {
     Ridge::Flow::_engine2ps($_[0]);
 }
 
+run_is_deeply 'input' => 'expected';
+
 __END__
 ===
 --- input e2ps: Sandbox::Engine::Hello

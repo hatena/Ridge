@@ -12,8 +12,6 @@ use HTTP::Request::Common;
 use UNIVERSAL::require;
 use Test::TCP;
 
-use Ridge::Daemon;
-
 CLASS->mk_classdata('childpid');
 CLASS->mk_classdata('ua');
 CLASS->mk_classdata('host' => 'localhost');

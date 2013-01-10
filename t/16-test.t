@@ -2,7 +2,6 @@
 use strict;
 use warnings;
 use FindBin::libs;
-use Socket;
 
 use Ridge::Test 'Sandbox';
 use Test::More tests => 8;

@@ -14,6 +14,8 @@ sub factory {
     });
 }
 
+run_is 'input' => 'expected';
+
 __END__
 ===
 --- input factory: http://d.hatena.ne.jp

@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use base qw(Ridge::Object);
 use Path::Class qw();
+use Ridge::Daemon;
 
 __PACKAGE__->mk_accessors(qw(
     directory root

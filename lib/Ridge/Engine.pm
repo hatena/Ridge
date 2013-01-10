@@ -55,7 +55,7 @@ sub import {
              $callpkg->$attr($container);
 
              {
-                 ## because Module::Referesher on Ridge::Daemon is noisy.
+                 # Suppress warnings on reloading modules.
                  no warnings 'redefine';
 
                  *{"$callpkg\::$method"} = _make_filter_method($callpkg, $attr, 'append');

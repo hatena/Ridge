@@ -59,7 +59,10 @@ use Ridge::Request;
 {
     my $req = Ridge::Request->new(GET('/foo:bar')->to_psgi);
     is $req->uri, "http://localhost:80/foo:bar";
-    is $req->escaped_uri, "http://localhost/foo%3Abar";
+    require Plack;
+    is $req->escaped_uri, (Plack->VERSION >= 1.0002)
+                          ? "http://localhost/foo:bar"
+                          : "http://localhost/foo%3Abar";
     is $req->original_uri, "http://localhost/foo:bar";
 }
 

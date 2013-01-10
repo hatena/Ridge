@@ -73,8 +73,10 @@ sub as_html {
 
 sub as_string_pretty {
     my $self = shift;
-    join "\n", grep { ! ( m/^(POE::|Ridge::)/ || m/Ridge\/Daemon\.pm/ || m/eval\s.*(Ridge\.pm|\/POE\/)/ ) } 
-       $self->as_string, split "\n", $self->trace->as_string;
+    join "\n", grep { ! (
+        m<^(?:Ridge|Plack::(?:Handler|Middleware|Test))::> ||
+        m<^eval\s.*/(?:Ridge\.pm\b|Plack/(?:Middleware|Test)/)>
+    ) } $self->as_string, split "\n", $self->trace->as_string;
 }
 
 sub as_response {

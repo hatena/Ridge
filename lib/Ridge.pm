@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use base qw/Ridge::Object/;
 
-our $VERSION = 0.11_01;
+our $VERSION = 0.11_02;
 
 use Carp;
 use CLASS;

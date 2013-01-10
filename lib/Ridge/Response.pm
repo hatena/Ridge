@@ -12,7 +12,7 @@ sub new {
     my ($class, @args) = @_;
     my $self = $class->SUPER::new(@args);
     $self->_init(@args);
-    bless $self, $class;
+    return $self;
 }
 
 sub _init {

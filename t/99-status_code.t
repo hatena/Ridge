@@ -28,6 +28,8 @@ sub code {
 package MyTestSuite;
 use Test::Base -Base;
 
+run_is 'input' => 'expect';
+
 __END__
 ===
 --- input code: http://d.hatena.ne.jp
